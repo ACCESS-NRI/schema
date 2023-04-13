@@ -6,7 +6,7 @@ Example: an ACCESS-CM2 historical run comprising many netcdf files (data assets)
 
 | Property | Expected type | Description | Entry required | Notes | in `metadata.yaml` |
 | --- | --- | --- | --- | --- | --- |
-| **name** | string | Name of the experiment asset | :heavy_check_mark: | Enforing combination of only lowercase + uppercase letters, digits and underscores adds functionality to Intake catalog | :heavy_check_mark: |
+| **name** | string | Name of the experiment asset | :heavy_check_mark: | Enforcing combination of only lowercase + uppercase letters, digits and underscores adds functionality to Intake catalog | :heavy_check_mark: |
 | **uuid** | string | Unique uuid for the experiment asset | :heavy_check_mark: |  | :heavy_check_mark: |
 | **short_description** | string | Short description of the experiment asset (< 150 char) | :heavy_check_mark: |  | :heavy_check_mark: |
 | **long_description** | string | Long description of the experiment asset (no char limit) | :heavy_check_mark: |  | :heavy_check_mark: |
