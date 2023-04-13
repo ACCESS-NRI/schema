@@ -1,6 +1,6 @@
 # Experiment asset
 
-*A collection of datasets that each may comprise many data assets.*
+*A collection of one or more datasets that each may comprise one or more data assets.*
 
 Example: an ACCESS-CM2 historical run comprising many netcdf files (data assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
 
