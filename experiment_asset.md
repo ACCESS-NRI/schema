@@ -2,7 +2,9 @@
 
 *A collection of one or more datasets that each may comprise one or more [file assets](https://github.com/ACCESS-NRI/schema/blob/main/file_asset.md).*
 
-Example: an ACCESS-CM2 historical run comprising many netcdf files (file assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
+Examples: 
+- an ACCESS-CM2 historical run comprising many netcdf files (file assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
+- a collection of CMIP6 data spanning multiple models, each comprising many netcdf files that can be merged into distinct datasets
 
 | Property | Expected type | Description | Notes | in `metadata.yaml` (two ticks for enforce) |
 | --- | --- | --- | --- | --- |
