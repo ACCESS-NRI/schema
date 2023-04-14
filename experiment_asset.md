@@ -1,8 +1,8 @@
 # Experiment asset
 
-*A collection of one or more datasets that each may comprise one or more data assets.*
+*A collection of one or more datasets that each may comprise one or more file assets.*
 
-Example: an ACCESS-CM2 historical run comprising many netcdf files (data assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
+Example: an ACCESS-CM2 historical run comprising many netcdf files (file assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
 
 | Property | Expected type | Description | Notes | in `metadata.yaml` (two ticks for enforce) |
 | --- | --- | --- | --- | --- |
