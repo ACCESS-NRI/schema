@@ -17,6 +17,7 @@ Examples:
 | **email** | string | Contact email address |  | :heavy_check_mark: |
 | **created** | string | Initial creation date of experiment asset | This is the earliest relevant date | :heavy_check_mark: |
 | **reference** | string | Citation or reference information | Could be in the form a DOI or a request, e.g "please consider citing blah" | :heavy_check_mark: |
+| **parent_experiment** | string | uuid for parent experiment if appropriate |  | :heavy_check_mark: |
 | **related_experiments** | list of string | uuids for any related experiment assets | Maybe this is overkill? | :heavy_check_mark: |
 | **notes** | string | Additional notes |  | :heavy_check_mark: |
 | **keywords** | list of string | Keywords to associated with experiment asset |  | :heavy_check_mark: |
