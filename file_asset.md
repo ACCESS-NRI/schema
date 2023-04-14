@@ -2,7 +2,8 @@
 
 *A file containing or referencing climate data*
 
-Example: A single netcdf file output from an ACCESS-CM2 historical run
+Examples: 
+- a single netcdf file output from an ACCESS-CM2 historical run
 
 | Property | Expected type | Description | Notes | core column in new intake-esm catalog |
 | --- | --- | --- | --- | --- |
