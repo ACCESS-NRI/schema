@@ -1,6 +1,6 @@
 # Experiment asset
 
-*A collection of one or more datasets that each may comprise one or more file assets.*
+*A collection of one or more datasets that each may comprise one or more [file assets](https://github.com/ACCESS-NRI/schema/blob/main/file_asset.md).*
 
 Example: an ACCESS-CM2 historical run comprising many netcdf files (file assets) that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc)
 
