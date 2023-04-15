@@ -8,7 +8,7 @@ Examples:
 | Property | Expected type | Description | Notes | core column in new intake-esm catalog |
 | --- | --- | --- | --- | --- |
 | **path** | string | The path to the file asset | | :heavy_check_mark: |
-| **realm** | string | The realm of the variables in the asset | | :heavy_check_mark: (allow "atmos", "ocean", "land", "ice", "multi") |
+| **realm** | string | The realm of the variables in the asset | | :heavy_check_mark: (allow "aerosol", "atmos", "ice", "land", "multi", "ocean") |
 | **variable** | string, list of string | The variable(s) in the asset | | :heavy_check_mark: (enforce as list) |
 | **frequency** | string | The frequency of the variables in the asset | | :heavy_check_mark: (allow "fx", "subhr", "\d+hr", "\d+day", "\d+mon", "\d+yr", "\d+dec") |
 | **start_date** | string | The start date of the file | | :heavy_check_mark: (allow "%Y-%m-%d, %H:%M:%S") |
