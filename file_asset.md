@@ -2,6 +2,8 @@
 
 *A file containing or referencing climate data*
 
+Many file assets may constitute an [experiment asset](https://github.com/ACCESS-NRI/schema/blob/main/experiment_asset.md)
+
 Examples: 
 - a single netcdf file output from an ACCESS-CM2 historical run
 
