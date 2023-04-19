@@ -13,8 +13,8 @@ Examples:
 | **short_description** | string | Short description of the experiment asset (< 150 char)  |  | :heavy_check_mark: :heavy_check_mark: | :heavy_check_mark: ("description") |
 | **long_description** | string | Long description of the experiment asset (no char limit) |  | :heavy_check_mark: :heavy_check_mark: |  |
 | **model** | string or list of strings | The name of the model(s) used in the experiment |  | :heavy_check_mark: | :heavy_check_mark: |
-| **realm** | string or list of strings | The realms included in the experiment |  |  | :heavy_check_mark: |
-| **frequency** | string or list of strings | The frequency(/ies) included in the experiment |  |  | :heavy_check_mark: |
+| **realm** | string or list of strings | The realms included in the experiment | Would be helpful to enforce a language, e.g. "aerosol", "atmos", "ice", "land", "multi", "ocean"... |  | :heavy_check_mark: |
+| **frequency** | string or list of strings | The frequency(/ies) included in the experiment | Would be helpful to enforce a language e.g. "fx", "subhr", "\d+hr", "\d+day", "\d+mon", "\d+yr", "\d+dec" |  | :heavy_check_mark: |
 | **variable** | string or list of strings | The variable(s) included in the experiment |  |  | :heavy_check_mark: |
 | **contact** | string | Contact name |  | :heavy_check_mark: |  |
 | **email** | string | Contact email address |  | :heavy_check_mark: |  |
