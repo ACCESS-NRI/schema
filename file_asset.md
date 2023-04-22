@@ -16,4 +16,5 @@ Examples:
 | **frequency** | string | The frequency of the variables in the asset | | :heavy_check_mark: (allow "fx", "subhr", "\d+hr", "\d+day", "\d+mon", "\d+yr", "\d+dec") |
 | **start_date** | string | The start date of the file | | :heavy_check_mark: (allow "%Y-%m-%d, %H:%M:%S") |
 | **end_date** | string | The end date of the file | | :heavy_check_mark: (allow "%Y-%m-%d, %H:%M:%S") |
+| **units** | string, list of string | The units of the variable(s) in the asset | | |
 | **variable_standard_name** | string, list of string | The standard name of the variable(s) in the asset | | |
