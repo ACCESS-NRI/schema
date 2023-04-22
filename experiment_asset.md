@@ -16,7 +16,8 @@ Examples:
 | **realm** | string or list of strings | The realms included in the experiment | Would be helpful to enforce a vocab, e.g. CMIP6 |  | :heavy_check_mark: |
 | **frequency** | string or list of strings | The frequency(/ies) included in the experiment | Would be helpful to enforce a vocab e.g. "fx", "subhr", "\d+hr", "\d+day", "\d+mon", "\d+yr", "\d+dec" |  | :heavy_check_mark: |
 | **variable** | string or list of strings | The variable(s) included in the experiment |  |  | :heavy_check_mark: |
-| **nominal_resolution** | string or list of strings | The nominal resolution(s) of model(s) used in the experiments | Difficult to enforce a vocab | :heavy_check_mark: | |
+| **nominal_resolution** | string or list of strings | The nominal resolution(s) of model(s) used in the experiment | Difficult to enforce a vocab | :heavy_check_mark: | |
+| **version** | string | The version of the experiment | | :heavy_check_mark: | |
 | **contact** | string | Contact name |  | :heavy_check_mark: |  |
 | **email** | string | Contact email address |  | :heavy_check_mark: |  |
 | **created** | string | Initial creation date of experiment asset | This is the earliest relevant date | :heavy_check_mark: |  |
