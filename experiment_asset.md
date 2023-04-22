@@ -1,4 +1,4 @@
-# Experiment asset
+# Climate model experiment asset
 
 *A collection of one or more datasets that each may comprise one or more [file assets](https://github.com/ACCESS-NRI/schema/blob/main/file_asset.md).*
 
@@ -9,7 +9,7 @@ Examples:
 | Property | Expected type | Description | Notes | In `metadata.yaml` (double for enforced) | Column in metacatalog |
 | --- | --- | --- | --- | --- | --- |
 | **name** | string | Name of the experiment asset  | Enforcing combination of only lowercase + uppercase letters, digits and underscores adds functionality to Intake catalog | :heavy_check_mark: :heavy_check_mark: | :heavy_check_mark: |
-| **uuid** | string | Unique uuid for the experiment asset  |  | :heavy_check_mark: :heavy_check_mark: |  |
+| **experiment_uuid** | string | Unique uuid for the experiment asset  |  | :heavy_check_mark: :heavy_check_mark: |  |
 | **short_description** | string | Short description of the experiment asset (< 150 char)  |  | :heavy_check_mark: :heavy_check_mark: | :heavy_check_mark: ("description") |
 | **long_description** | string | Long description of the experiment asset (no char limit) |  | :heavy_check_mark: :heavy_check_mark: |  |
 | **model** | string or list of strings | The name of the model(s) used in the experiment |  | :heavy_check_mark: | :heavy_check_mark: |
