@@ -18,3 +18,4 @@ Examples:
 | **end_date** | string | The end date of the file | | :heavy_check_mark: (allow "%Y-%m-%d, %H:%M:%S") |
 | **units** | string, list of string | The units of the variable(s) in the asset | | |
 | **variable_standard_name** | string, list of string | The standard name of the variable(s) in the asset | | |
+| **nominal_resolution** | string | The nominal resolution | Perhaps restrict to "[\d.]+ km", "\dx\d degree" to overlap with CMIP6 | |
