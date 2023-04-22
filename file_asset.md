@@ -1,6 +1,6 @@
-# File asset
+# Climate model file asset
 
-*A file containing or referencing climate data*
+*A file containing or referencing climate model data*
 
 Many file assets may constitute an [experiment asset](https://github.com/ACCESS-NRI/schema/blob/main/experiment_asset.md)
 
