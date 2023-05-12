@@ -7,7 +7,7 @@
         },
         "experiment_uuid": {
             "type": "string",
-            "format": "uuid",
+            "format": "uuid"
         },
         "short_description": {"type": "string"},
         "long_description": {"type": "string"},
@@ -16,8 +16,8 @@
                 {"type": ["string", "null"]},
                 {
                     "type": "array",
-                    "items": {"type": ["string", "null"]},
-                },
+                    "items": {"type": ["string", "null"]}
+                }
             ]
         },
         "realm": {
@@ -82,8 +82,8 @@
                 {"type": ["string", "null"]},
                 {
                     "type": "array",
-                    "items": {"type": ["string", "null"]},
-                },
+                    "items": {"type": ["string", "null"]}
+                }
             ]
         },
         "version": {"type": ["number", "null"]},
@@ -96,13 +96,13 @@
         "parent_experiment": {"type": ["string", "null"]},
         "related_experiments": {
             "type": ["array", "null"],
-            "items": {"type": ["string", "null"]},
+            "items": {"type": ["string", "null"]}
         },
         "notes": {"type": ["string", "null"]},
         "keywords": {
             "type": ["array", "null"],
-            "items": {"type": ["string", "null"]},
-        },
+            "items": {"type": ["string", "null"]}
+        }
     },
     "required": [
         "name",
