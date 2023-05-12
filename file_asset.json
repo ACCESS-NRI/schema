@@ -1,0 +1,96 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string"
+        },
+        "realm": {
+            "type": "string",
+            "enum": [
+                "aerosol",
+                "atmos",
+                "atmosChem",
+                "land",
+                "landIce",
+                "none",
+                "ocean",
+                "ocnBgchem",
+                "seaIce",
+                "unknown"
+            ]
+        },
+        "variable": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "variable_long_name": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "variable_standard_name": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "variable_cell_methods": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "frequency": {
+            "type": "string",
+            "oneOf": [
+                {
+                    "pattern": "^fx$"
+                },
+                {
+                    "pattern": "^subhr$"
+                },
+                {
+                    "pattern": "^\\d+hr$"
+                },
+                {
+                    "pattern": "^\\d+day$"
+                },
+                {
+                    "pattern": "^\\d+mon$"
+                },
+                {
+                    "pattern": "^\\d+yr$"
+                },
+                {
+                    "pattern": "^\\d+dec$"
+                }
+            ]
+        },
+        "start_date": {
+            "type": "string",
+            "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d,\\s\\d\\d:\\d\\d:\\d\\d$"
+        },
+        "end_date": {
+            "type": "string",
+            "pattern": "^\\d\\d\\d\\d-\\d\\d-\\d\\d,\\s\\d\\d:\\d\\d:\\d\\d$"
+        }
+        "units": {
+            "type": "string"
+        },
+        "nominal_resolution": {
+            "type": "string"
+        },
+    },
+    "required": [
+        "path",
+        "realm",
+        "variable",
+        "frequency",
+        "start_date",
+        "end_date"
+    ]
+}
