@@ -3,14 +3,22 @@
     "type": "object",
     "properties": {
         "name": {
-            "type": "string"
+            "type": "string",
+            "description": "The name of the experiment"
         },
         "experiment_uuid": {
             "type": "string",
-            "format": "uuid"
+            "format": "uuid",
+            "description": "Unique uuid for the experiment asset"
         },
-        "short_description": {"type": "string"},
-        "long_description": {"type": "string"},
+        "description": {
+            "type": "string",
+            "description": "Short description of the experiment asset (< 150 char)"
+        },
+        "long_description": {
+            "type": "string",
+            "description": "Long description of the experiment asset"
+        },
         "model": {
             "oneOf": [
                 {"type": ["string", "null"]},
@@ -18,7 +26,8 @@
                     "type": "array",
                     "items": {"type": ["string", "null"]}
                 }
-            ]
+            ],
+            "description": "The name(s) of the model(s) used in the experiment"
         },
         "realm": {
             "oneOf": [
@@ -38,7 +47,8 @@
                         "unknown"
                     ]
                 }
-            ]
+            ],
+            "description": "The realms included in the experiment"
         },
         "frequency": {
             "oneOf": [
@@ -69,13 +79,15 @@
                         }
                    ]
                 }
-            ]
+            ],
+            "description": "The frequency(/ies) included in the experiment"
         },
         "variable": {
             "type": "array",
             "items": {
                 "type": ["string", "null"]
-            }
+            },
+            "description": "The variable(s) included in the experiment"
         },
         "nominal_resolution": {
             "oneOf": [
@@ -84,24 +96,54 @@
                     "type": "array",
                     "items": {"type": ["string", "null"]}
                 }
-            ]
+            ],
+            "description": "The nominal resolution(s) of model(s) used in the experiment"
         },
-        "version": {"type": ["number", "null"]},
-        "contact": {"type": ["string", "null"]},
-        "email": {"type": ["string", "null"]},
-        "created": {"type": ["string", "null"]},
-        "reference": {"type": ["string", "null"]},
-        "license": {"type": ["string", "null"]},
-        "url": {"type": ["string", "null"]},
-        "parent_experiment": {"type": ["string", "null"]},
+        "version": {
+            "type": ["number", "null"],
+            "description": "The version of the experiment"
+        },
+        "contact": {
+            "type": ["string", "null"],
+            "description": "Contact name for the experiment"
+        },
+        "email": {
+            "type": ["string", "null"],
+            "description": "Email address of the contact for the experiment"
+        },
+        "created": {
+            "type": ["string", "null"],
+            "description": "Initial creation date of experiment"
+        },
+        "reference": {
+            "type": ["string", "null"],
+            "description": "Citation or reference information"
+        },
+        "license": {
+            "type": ["string", "null"],
+            "description": "License of the experiment"
+        },
+        "url": {
+            "type": ["string", "null"],
+            "description": "Relevant url, e.g. github repo for experiment configuration"
+        },
+        "parent_experiment": {
+            "type": ["string", "null"],
+            "description": "experiment_uuid for parent experiment if appropriate"
+        },
         "related_experiments": {
             "type": ["array", "null"],
-            "items": {"type": ["string", "null"]}
+            "items": {"type": ["string", "null"]},
+            "description": "experiment_uuids for any related experiment(s)"
         },
-        "notes": {"type": ["string", "null"]},
+        "notes": {
+            "type": ["string", "null"],
+            "description": "Additional notes"
+        },
         "keywords": {
             "type": ["array", "null"],
-            "items": {"type": ["string", "null"]}
+            "items": {"type": ["string", "null"]},
+            "description": "Keywords to associated with experiment"
         }
     },
     "required": [
