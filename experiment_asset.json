@@ -20,66 +20,67 @@
             "description": "Long description of the experiment asset"
         },
         "model": {
-            "oneOf": [
-                {"type": ["string", "null"]},
-                {
-                    "type": "array",
-                    "items": {"type": ["string", "null"]}
-                }
-            ],
+            "type": "array",
+            "items": {"type": ["string", "null"]},
             "description": "The name(s) of the model(s) used in the experiment"
         },
         "realm": {
-            "oneOf": [
-                {"type": "null"},
-                {
-                    "type": "string",
-                    "enum": [
-                        "aerosol",
-                        "atmos",
-                        "atmosChem",
-                        "land",
-                        "landIce",
-                        "none",
-                        "ocean",
-                        "ocnBgchem",
-                        "seaIce",
-                        "unknown"
-                    ]
-                }
-            ],
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {"type": "null"},
+                    {
+                        "type": "string",
+                        "enum": [
+                            "aerosol",
+                            "atmos",
+                            "atmosChem",
+                            "land",
+                            "landIce",
+                            "none",
+                            "ocean",
+                            "ocnBgchem",
+                            "seaIce",
+                            "unknown"
+                        ]
+                    }
+                ]
+            },
             "description": "The realms included in the experiment"
         },
         "frequency": {
-            "oneOf": [
-                {"type": "null"},
-                {
-                    "type": "string",
-                    "oneOf": [
-                        {
-                            "pattern": "^fx$"
-                        },
-                        {
-                            "pattern": "^subhr$"
-                        },
-                        {
-                            "pattern": "^\\d+hr$"
-                        },
-                        {
-                            "pattern": "^\\d+day$"
-                        },
-                        {
-                            "pattern": "^\\d+mon$"
-                        },
-                        {
-                            "pattern": "^\\d+yr$"
-                        },
-                        {
-                            "pattern": "^\\d+dec$"
-                        }
-                   ]
-                }
-            ],
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {"type": "null"},
+                    {
+                        "type": "string",
+                        "oneOf": [
+                            {
+                                "pattern": "^fx$"
+                            },
+                            {
+                                "pattern": "^subhr$"
+                            },
+                            {
+                                "pattern": "^\\d+hr$"
+                            },
+                            {
+                                "pattern": "^\\d+day$"
+                            },
+                            {
+                                "pattern": "^\\d+mon$"
+                            },
+                            {
+                                "pattern": "^\\d+yr$"
+                            },
+                            {
+                                "pattern": "^\\d+dec$"
+                            }
+                       ]
+                    }
+                ]
+            },
             "description": "The frequency(/ies) included in the experiment"
         },
         "variable": {
@@ -90,13 +91,8 @@
             "description": "The variable(s) included in the experiment"
         },
         "nominal_resolution": {
-            "oneOf": [
-                {"type": ["string", "null"]},
-                {
-                    "type": "array",
-                    "items": {"type": ["string", "null"]}
-                }
-            ],
+            "type": "array",
+            "items": {"type": ["string", "null"]},
             "description": "The nominal resolution(s) of model(s) used in the experiment"
         },
         "version": {
@@ -132,8 +128,10 @@
             "description": "experiment_uuid for parent experiment if appropriate"
         },
         "related_experiments": {
-            "type": ["array", "null"],
-            "items": {"type": ["string", "null"]},
+            "type": "array",
+            "items": {
+                "type": ["string", "null"]
+            },
             "description": "experiment_uuids for any related experiment(s)"
         },
         "notes": {
@@ -141,15 +139,17 @@
             "description": "Additional notes"
         },
         "keywords": {
-            "type": ["array", "null"],
-            "items": {"type": ["string", "null"]},
+            "type": "array",
+            "items": {
+                "type": ["string", "null"]
+            },
             "description": "Keywords to associated with experiment"
         }
     },
     "required": [
         "name",
         "experiment_uuid",
-        "short_description",
+        "description",
         "long_description",
         "model",
         "nominal_resolution",
@@ -161,8 +161,8 @@
         "license",
         "url",
         "parent_experiment",
-        "related_experiment",
-        "note",
+        "related_experiments",
+        "notes",
         "keywords"
     ],
     "additionalProperties": false
