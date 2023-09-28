@@ -25,30 +25,37 @@
         "variable": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "description": "The variable(s) in the file asset"
         },
         "variable_long_name": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "description": "The long_name(s) of the variable(s) in the file asset"
         },
         "variable_standard_name": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "description": "The standard_names(s) of the variable(s) in the file asset"
         },
         "variable_cell_methods": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "description": "The cell_methods(s) of the variable(s) in the file asset"
+        },
+        "variable_units": {
+            "type": "array",
+            "items": {
+                "type": ["string", "null"]
+            },
+            "description": "The units of the variable(s) in the file asset"
         },
         "frequency": {
             "type": "string",
@@ -100,13 +107,6 @@
                 }
              ],
             "description": "The end date of the variable(s) in the file asset"
-        },
-        "units": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "description": "The units of the variable(s) in the file asset"
         },
         "nominal_resolution": {
             "type": "string",
