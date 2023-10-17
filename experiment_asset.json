@@ -96,7 +96,7 @@
             "description": "The nominal resolution(s) of model(s) used in the experiment (string)"
         },
         "version": {
-            "type": ["number", "null"],
+            "type": ["number", "string", "null"],
             "description": "The version of the experiment (number)"
         },
         "contact": {
