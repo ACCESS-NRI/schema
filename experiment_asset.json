@@ -97,7 +97,7 @@
         },
         "version": {
             "type": ["number", "string", "null"],
-            "description": "The version of the experiment (number)"
+            "description": "The version of the experiment (number, string)"
         },
         "contact": {
             "type": ["string", "null"],
