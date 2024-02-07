@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Access-OM2 Checksums",
+    "description": "The checksums from the model output of Access-OM2 model run",
+    "type": "object",
+    "properties": {
+        "schema": {
+            "type": "string",
+            "description": "The URL of the schema (str)"
+        },
+        "schema_version": {
+            "type": "string",
+            "description": "The version of the schema (str)"
+        },
+        "output": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field": {
+                        "type": "string",
+                        "description": "The name of the checksum field (str)"
+                    },
+                    "checksum": {
+                        "type": "string",
+                        "description": "The value of the checksum (str)"
+                    }
+                },
+                "required": [
+                    "field",
+                    "checksum"
+                ]
+            }
+        }
+    },
+    "required": [
+        "schema",
+        "schema_version",
+        "output"
+    ]
+}
