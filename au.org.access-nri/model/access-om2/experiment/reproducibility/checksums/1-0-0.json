@@ -1,4 +1,5 @@
 {
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/access-om2/experiment/reproducibility/checksums/1-0-0.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Access-OM2 Checksums",
     "description": "The checksums from the model output of Access-OM2 model run",
