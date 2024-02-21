@@ -5,32 +5,18 @@
     "description": "The checksums from the model output of Access-OM2 model run",
     "type": "object",
     "properties": {
-        "schema": {
-            "type": "string",
-            "description": "The URL of the schema (str)"
-        },
         "schema_version": {
-            "type": "string",
+            "const": "1-0-0",
             "description": "The version of the schema (str)"
         },
         "output": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "field": {
-                        "type": "string",
-                        "description": "The name of the checksum field (str)"
-                    },
-                    "checksum": {
-                        "type": "string",
-                        "description": "The value of the checksum (str)"
-                    }
+            "type": "object",
+            "patternProperties": {
+                ".*" : {
+                    "type": "String",
+                    "description": "The value of the checksum (str)"
                 },
-                "required": [
-                    "field",
-                    "checksum"
-                ]
+                "description": "Checksum fields as properties"
             }
         }
     },
