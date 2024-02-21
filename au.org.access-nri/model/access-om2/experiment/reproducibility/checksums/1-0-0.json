@@ -13,10 +13,14 @@
             "type": "object",
             "patternProperties": {
                 ".*" : {
-                    "type": "string",
-                    "description": "The value of the checksum (str)"
+                    "type": "array",
+                    "description": "List of checksum values",
+                    "items": {
+                        "type": "string",
+                        "description": "A checksum value (str)"
+                    }
                 },
-                "description": "Checksum fields as properties"
+                "description": "Checksum fields as properties and values as array"
             }
         }
     },
