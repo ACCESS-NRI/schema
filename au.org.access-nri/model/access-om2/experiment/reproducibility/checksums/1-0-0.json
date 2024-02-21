@@ -13,7 +13,7 @@
             "type": "object",
             "patternProperties": {
                 ".*" : {
-                    "type": "String",
+                    "type": "string",
                     "description": "The value of the checksum (str)"
                 },
                 "description": "Checksum fields as properties"
@@ -21,7 +21,6 @@
         }
     },
     "required": [
-        "schema",
         "schema_version",
         "output"
     ]
