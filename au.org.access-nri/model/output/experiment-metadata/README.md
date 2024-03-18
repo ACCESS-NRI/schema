@@ -1,6 +1,6 @@
 # Experiment metadata
 
-This schema is used for metadata associated with a model experiment. A model experiment is loosely defined as a collection of one or more climate model datasets that each may comprise one a more files. Examples of a model experiment include:
+This schema is used for metadata associated with a model experiment. A model experiment is loosely defined as a collection of one or more climate model datasets that each may comprise one or more files. Examples of a model experiment include:
 
 - an ACCESS-CM2 historical run comprising many netcdf files that can be merged into distinct datasets (e.g. atmospheric daily data, ocean monthly data etc),
 - a collection of CMIP6 data spanning multiple models, each comprising many netcdf files that can be merged into distinct datasets.
