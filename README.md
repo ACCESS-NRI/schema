@@ -13,3 +13,7 @@ In a nutshell, `SchemaVer` is a `MODEL-REVISION-ADDITION` format, where:
 * If adding changes that have no interoperability with the previous schema or historical data, the `MODEL` version should be incremented.
 * If adding changes that may have interoperability with the previous schema and some historical data, increment the `REVISION` version.
 * If adding changes that are interoperable with the previous schema and all historical data, increment the `ADDITION` version.
+
+## Using schema
+
+When downloading or referencing schema from this repo in other applications it is a good idea to use a specific commit of the schema. This will make your application more robust to future changes to this repo.
