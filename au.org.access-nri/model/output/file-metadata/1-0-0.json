@@ -1,7 +1,14 @@
 {
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/output/file-metadata/1-0-0.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "File metadata",
+    "description": "The metadata associated with a file containing or referencing climate model data",
     "type": "object",
     "properties": {
+        "schema_version": {
+            "const": "1-0-0",
+            "description": "The version of the schema (string)"
+        },
         "path": {
             "type": "string",
             "description": "The path to the file asset"
