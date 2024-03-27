@@ -1,5 +1,9 @@
 # Experiment metadata changelog
 
+## 1-0-2
+
+* Allow model field to be string/null or array of string/null (previously just array)
+
 ## 1-0-1
 
 * Add "wave" to list of allowable realms
