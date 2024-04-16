@@ -16,7 +16,7 @@ In a nutshell, `SchemaVer` is a `MODEL-REVISION-ADDITION` format, where:
 
 ## Schema organisation
 
-All ACCESS-NRI schema should be under the `au.org.access-nri` top-level directory. In this way this schema repository could contains copies of schema it does not "own" but that were used within the organisation.
+All ACCESS-NRI schema should be under the `au.org.access-nri` top-level directory. In this way this schema repository could contain copies of schema it does not "own" but that were used within the organisation.
 
 Below the organisation top-level schema are organised by domain and purpose:
 ```
@@ -49,7 +49,7 @@ au.org.access-nri/
 
 Note that new versions of schema are stored in different files named for the version. This can make it difficult to review a pull request which adds a new version as there is no useful `diff` information. The entire file is new.
 
-When creating new versions of schema consider creating an initial commit that just copies the previous version into the new version, and then another separate commit that makes the required changes. This makes it easier to see what has changed, e.g. [GitHub has a freature to isolate changes to a single commit, or a specific range of commits](https://stackoverflow.com/a/50417336).
+When creating new versions of schema consider creating an initial commit that just copies the previous version into the new version, and then another separate commit that makes the required changes. This makes it easier to see what has changed, e.g. [GitHub has a feature to isolate changes to a single commit, or a specific range of commits](https://stackoverflow.com/a/50417336).
 
 ## Using schema
 
