@@ -297,6 +297,8 @@
           "specs": {
             "type": "array",
             "default": [],
+            "minItems": 1,
+            "maxItems": 1,
             "items": {
                 "type": "string",
                 "pattern": "^.*@git\\.[A-Za-z0-9.\\-_]+$"
