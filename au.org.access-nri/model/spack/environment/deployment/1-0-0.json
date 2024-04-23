@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Restricted spack environment file schema for ACCESS-NRI continuous deployment",
-    "description": "This schema was adapted from https://github.com/ACCESS-NRI/spack/blob/releases/v0.21/lib/spack/spack/schema/env.py to support our flavour of spack.yaml",
+    "description": "This schema was adapted from https://github.com/ACCESS-NRI/spack/blob/releases/v0.21/lib/spack/spack/schema/env.py to specify a restricted form of spack.yaml to design generic deployment infrastructure.",
     "type": "object",
     "additionalProperties": false,
     "properties": {
