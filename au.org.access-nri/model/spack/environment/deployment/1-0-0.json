@@ -19,7 +19,7 @@
             "(?!^all$)(^\\w[\\w-]*)": {
               "type": "object",
               "default": {},
-              "additionalProperties": false,
+              "additionalProperties": true,
               "properties": {
                 "require": {
                   "type": "array",
