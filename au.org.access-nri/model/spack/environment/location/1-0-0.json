@@ -16,7 +16,8 @@
         "md5hash": {
           "type": "string"
         }
-      }
+      },
+      "required": ["path", "md5hash"]
     }
   }
 }
