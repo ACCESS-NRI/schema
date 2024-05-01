@@ -13,11 +13,11 @@
         "path": {
           "type": "string"
         },
-        "md5hash": {
+        "spack_hash": {
           "type": "string"
         }
       },
-      "required": ["path", "md5hash"]
+      "required": ["path", "spack_hash"]
     }
   }
 }
