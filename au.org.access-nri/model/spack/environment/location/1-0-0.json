@@ -7,17 +7,7 @@
   "additionalProperties": false,
   "patternProperties": {
     "^.*@.*$": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "path": {
-          "type": "string"
-        },
-        "spack_hash": {
-          "type": "string"
-        }
-      },
-      "required": ["path", "spack_hash"]
+      "type": "string"
     }
   }
 }
