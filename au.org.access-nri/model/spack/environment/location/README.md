@@ -1,8 +1,8 @@
-# ACCESS-OM2 Checksums
+# Deployment Packages Location Schema
 
 This schema is used to validate `spack.location.json` files generated during the automated deployment of models.
 
-Each line contains the spack build hash for a deployed software package, and the path on the system where the package was deployed.
+Each line contains the path on the system where the package was deployed.
 
 ## Extending the schema
 
