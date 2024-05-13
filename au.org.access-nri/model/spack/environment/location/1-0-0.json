@@ -6,8 +6,15 @@
   "type": "object",
   "additionalProperties": false,
   "patternProperties": {
-    "^.*@.*$": {
-      "type": "string"
+    "^[a-z0-9]+$": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path"],
+      "properties": {
+        "path": {
+          "type": "string"
+        }
+      }
     }
   }
 }
