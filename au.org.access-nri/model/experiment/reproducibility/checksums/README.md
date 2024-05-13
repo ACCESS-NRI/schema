@@ -1,9 +1,8 @@
-# ACCESS-OM2 Checksums
+# Model Configuration Checksums
 
-This schema is used for checksum files generated as part of ACCESS-OM2
-reproducibility CI checks for model configurations in the
-[ACCESS-NRI/access-om2-configs](https://github.com/ACCESS-NRI/access-om2-configs)
-repository.
+This schema is used for checksum files used as part of model reproducibility CI checks for model configurations. For example, the checksums are saved to released ACCESS-OM2 model configurations in the [ACCESS-NRI/access-om2-configs](https://github.com/ACCESS-NRI/access-om2-configs) repository. The pytests that are run as part of these CI tests that generate and compare checksums are in the [ACCESS-NRI/model-config-tests](https://github.com/ACCESS-NRI/model-config-tests/) repository.
+
+
 
 ## Extending the schema
 
