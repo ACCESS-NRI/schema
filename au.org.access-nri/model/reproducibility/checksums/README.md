@@ -2,6 +2,7 @@
 
 This schema is used for checksum files used as part of model reproducibility CI checks for model configurations. For example, the checksums are saved to released ACCESS-OM2 model configurations in the [ACCESS-NRI/access-om2-configs](https://github.com/ACCESS-NRI/access-om2-configs) repository. The pytests that are run as part of these CI tests that generate and compare checksums are in the [ACCESS-NRI/model-config-tests](https://github.com/ACCESS-NRI/model-config-tests/) repository.
 
+Checksum values are the preferred values to store in files using this schema. But in some cases, formatted numbers can be stored instead to test that a model configuration reproduces the expected output.
 
 
 ## Extending the schema
