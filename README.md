@@ -23,13 +23,11 @@ Below the organisation top-level schema are organised by domain and purpose:
 $ tree au.org.access-nri/
 au.org.access-nri/
 └── model
-    ├── access-om2
-    │   └── experiment
-    │       └── reproducibility
-    │           └── checksums
-    │               ├── 1-0-0.json
-    │               ├── CHANGELOG.md
-    │               └── README.md
+    ├── reproducibility
+    │   └── checksums
+    │       ├── 1-0-0.json
+    │       ├── CHANGELOG.md
+    │       └── README.md
     └── output
         ├── experiment-metadata
         │   ├── 1-0-0.json

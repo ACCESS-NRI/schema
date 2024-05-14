@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/access-om2/experiment/reproducibility/checksums/1-0-0.json",
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/experiment/reproducibility/checksums/1-0-0.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Access-OM2 Checksums",
-    "description": "The checksums from the model output of Access-OM2 model run",
+    "title": "Model Checksums",
+    "description": "The checksums from the output of model run",
     "type": "object",
     "properties": {
         "schema_version": {
@@ -19,9 +19,9 @@
                         "type": "string",
                         "description": "A checksum value (str)"
                     }
-                },
-                "description": "Checksum fields as properties and values as array"
-            }
+                }
+            },
+            "description": "Checksum fields as properties and values as array"
         }
     },
     "required": [
