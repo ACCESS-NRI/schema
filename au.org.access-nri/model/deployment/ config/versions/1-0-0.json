@@ -5,6 +5,9 @@
     "description": "Schema for specifying versions of repositories used in the deployment of a model",
     "type": "object",
     "properties": {
+        "$schema": {
+            "type": "string"
+        },
         "spack-packages": {
             "type": "string"
         },
