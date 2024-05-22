@@ -1,0 +1,44 @@
+name: Validate With Schema
+description: Action that validates json/yaml data against a given schema
+inputs:
+  schema-version:
+    type: string
+    required: true
+    description: Version of the schema required, in SchemaVer
+  schema-location:
+    type: string
+    required: true
+    description: Directory within access-nri/schema that contains the schema
+  data-location:
+    type: string
+    required: true
+    description: Path(s) to the data file(s) in the callers repository
+runs:
+  using: composite
+  steps:
+    # Ensure that the calling workflow has checked out an appropriate git repository.
+    - shell: bash
+      run: |
+        if ! git status; then
+          echo "::error::Calling repository not checked out. Failing..."
+          exit 1
+        fi
+
+    # Checkout the `schema-repo`
+    - uses: actions/checkout@v4
+      with:
+        repository: access-nri/schema
+        path: schema
+        sparse-checkout: |
+          ${{ inputs.schema-location }}/${{ inputs.schema-version }}.json
+        sparse-checkout-cone-mode: false
+
+    - uses: GrantBirki/json-yaml-validate@d7814b94473939c1daaca2c96131b891d4703a3c # v2.7.1
+      with:
+        mode: fail
+        files: |
+          ${{ inputs.data-location }}
+        json_schema: schema/${{ inputs.schema-location }}/${{ inputs.schema-version }}.json
+        yaml_as_json: true
+        ajv_strict_mode: false
+        use_gitignore: false
