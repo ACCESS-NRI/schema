@@ -13,6 +13,13 @@ inputs:
     type: string
     required: true
     description: Path(s) to the data file(s) in the callers repository
+  meta-schema-version:
+    type: string
+    required: false
+    default: draft-07
+    description: |
+      Meta schema version of the schema required.
+      Accepts 'draft-07', 'draft-2019-09', 'draft-2020-12'.
 runs:
   using: composite
   steps:
@@ -39,6 +46,7 @@ runs:
         files: |
           ${{ inputs.data-location }}
         json_schema: schema/${{ inputs.schema-location }}/${{ inputs.schema-version }}.json
+        json_schema_version: ${{ inputs.meta-schema-version }}
         yaml_as_json: true
         ajv_strict_mode: false
         use_gitignore: false
