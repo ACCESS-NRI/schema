@@ -1,6 +1,6 @@
-# Model Configuration Checksums
+# Model Configuration CI Testing
 
-This schema is used to consolidate versions and defaults for multiple aspects of the model configuration CI pipeline, including reproducibility checks, QA checks, and scheduled checks.
+This schema is used to consolidate versions and defaults for multiple aspects of the model configuration CI pipeline, including reproducibility checks, QA checks, and scheduled checks. For more information on these tests, see  the [ACCESS-NRI/model-config-tests](https://github.com/ACCESS-NRI/model-config-tests/) repository.
 
 ## Extending the schema
 
