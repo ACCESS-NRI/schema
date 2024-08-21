@@ -1,8 +1,12 @@
 # `spack.yaml` Schema Changelog
 
+## 1-0-2
+
+* Updated `spack.packages.*.require[0]` syntax to allow for versions that have a `/` in them. For example, `spack.packages.mypackage.require[0] == @git.user/feature` allows the `mypackage` to use the branch `user/feature` as a version. This has full interoperability with the earlier schema.
+
 ## 1-0-1
 
-* Modified regex of `spack.packages.*.require[0]` to include `=` as a symbol. This allows versions like `@git.2024.05.28=access-esm1.5`. See issue https://github.com/ACCESS-NRI/spack-packages/issues/111 and related PR https://github.com/ACCESS-NRI/build-cd/pull/87. This has full interoperability with the earlier schema. 
+* Modified regex of `spack.packages.*.require[0]` to include `=` as a symbol. This allows versions like `@git.2024.05.28=access-esm1.5`. See issue https://github.com/ACCESS-NRI/spack-packages/issues/111 and related PR https://github.com/ACCESS-NRI/build-cd/pull/87. This has full interoperability with the earlier schema.
 
 ## 1-0-0
 
