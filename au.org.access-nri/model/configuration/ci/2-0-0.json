@@ -18,7 +18,7 @@
                 },
                 "python-version": {
                     "type": "string",
-                    "description": "The python version used to create test virtual environment"
+                    "description": "The python version used to create test virtual environment on Github hosted tests"
                 },
                 "payu-version": {
                     "type": "string",
