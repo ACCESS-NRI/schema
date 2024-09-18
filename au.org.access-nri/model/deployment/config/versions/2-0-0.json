@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/versions/1-0-0.json",
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/versions/2-0-0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Deployment Configuration for Versions",
     "description": "Schema for specifying versions of repositories used in the deployment of a model",
