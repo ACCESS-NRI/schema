@@ -38,38 +38,28 @@ jobs:
     strategy:
       matrix:
         schema: ${{ fromJson(needs.setup.outputs.matrix) }}
+    env:
+      METASCHEMA_PATH: schema.json
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Get metaschema from schema
+      - name: Download metaschema from schema
         id: metaschema
-        # Given the $schema property in the schema, output the equivalent
-        # property that is understandable to GrantBirki/json-yaml-validate's json_schema_version
         run: |
-          schema_url=$(jq '.["$schema"]' ${{ matrix.schema }})
+          schema_url=$(jq --compact-output --raw-output '."$schema"' ${{ matrix.schema }})
 
           if [ -z "$schema_url" ]; then
             echo '::error::No $schema property present in schema. Please add one to the schema.'
             exit 1
-          elif [[ "$schema_url" =~ "draft-07" ]]; then
-            echo "version=draft-07" >> $GITHUB_OUTPUT
-          elif [[ "$schema_url" =~ "draft/2020-12" ]]; then
-            echo "version=draft-2020-12" >> $GITHUB_OUTPUT
-          elif [[ "$schema_url" =~ "draft/2019-09" ]]; then
-            echo "version=draft-2019-09" >> GITHUB_OUTPUT
-          else
-            echo "::error::Schema URL '$schema_url' is not handled by this workflow. Please let @access-nri/model-release know."
-            exit 1
           fi
 
-      - uses: GrantBirki/json-yaml-validate@d7814b94473939c1daaca2c96131b891d4703a3c # v2.7.1
+          echo "Metaschema URL: $schema_url"
+          curl -o ${{ env.METASCHEMA_PATH }} $schema_url
+
+      - uses: actions/setup-python@v5
         with:
-          mode: fail
-          files: |
-            ${{ matrix.schema }}
-          json_schema_version: ${{ steps.metaschema.outputs.version }}
-          yaml_as_json: true
-          ajv_strict_mode: false
-          use_gitignore: false
+          python-version: '3.10'
+
+      - run: jsonschema ${{ env.METASCHEMA_PATH }} -i ${{ matrix.schema }}
