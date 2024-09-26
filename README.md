@@ -52,3 +52,19 @@ When creating new versions of schema consider creating an initial commit that ju
 ## Using schema
 
 When downloading or referencing schema from this repo in other applications it is a good idea to use a specific commit of the schema. This will make your application more robust to future changes to this repo.
+
+## CI in this Repository
+
+Pull Requests and Pushes to this repository checks that the schema itself is valid according to a metaschema given in the `$schema` property. Please remember to add a `$schema` property to your schema, like so:
+
+```json
+{
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/path/to/schema/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "A Cool Schema!"
+}
+```
+
+## Custom Actions in this Repository
+
+This repository has a `validate-with-schema` Github Actions action that should be used in conjunction with data that relies on a schema within this repository. See more in [the actions README.md](./.github/actions/validate-with-schema/README.md).

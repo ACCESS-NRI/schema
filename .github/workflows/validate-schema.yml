@@ -1,0 +1,69 @@
+name: Schema
+# Validate schemas modified in an pull request or push against their given meta-schema (such as draft-07, etc.)
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - au.org.access-nri/**.json
+  pull_request:
+    branches:
+      - main
+    paths:
+      - au.org.access-nri/**.json
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.changed.outputs.all_changed_files }}
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get all modified schema
+      uses: tj-actions/changed-files@48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c  # v45.0.3
+      id: changed
+      with:
+        matrix: true
+        files: |
+          **.json
+
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    needs:
+      - setup
+    strategy:
+      matrix:
+        schema: ${{ fromJson(needs.setup.outputs.matrix) }}
+    env:
+      METASCHEMA_PATH: schema.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download metaschema from schema
+        id: metaschema
+        run: |
+          schema_url=$(jq --compact-output --raw-output '."$schema"' ${{ matrix.schema }})
+
+          if [ -z "$schema_url" ]; then
+            echo '::error::No $schema property present in schema. Please add one to the schema.'
+            exit 1
+          fi
+
+          echo "Metaschema URL: $schema_url"
+          curl -o ${{ env.METASCHEMA_PATH }} $schema_url
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+
+      - name: Install and run check-jsonschema
+        run: |
+          pip install check-jsonschema==0.29.2
+          check-jsonschema --schemafile ${{ env.METASCHEMA_PATH }} ${{ matrix.schema }}
