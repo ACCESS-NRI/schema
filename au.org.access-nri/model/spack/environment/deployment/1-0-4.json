@@ -52,43 +52,87 @@
             "maxItems": 1,
             "items": {
               "type": "string",
-              "pattern": "^.+@git\\.[^ ]+.*$|\\$root-spec"
+              "pattern": "^.+@git\\.[^ ]+.*$|\\$ROOT_SPEC"
             }
           },
           "definitions": {
             "type": "array",
             "default": [],
-            "minItems": 0,
-            "oneOf": [
-              {
-                "contains": {
-                  "type": "object",
-                  "required": ["root_package"],
-                  "not": {
-                    "required": ["when"]
-                  }
-                }
-              },
-              {
-                "type": "array",
-                "maxItems": 0
-              }
-            ],
             "items": {
               "type": "object",
               "properties": {
                 "when": {
                   "type": "string"
                 },
-                "root_package": {
+                "ROOT_PACKAGE": {
                   "type": "array",
                   "minItems": 1,
                   "maxItems": 1,
                   "items": {
                     "type": "string"
                   }
+                },
+                "ROOT_SPEC": {
+                  "type": "array",
+                  "items": {
+                    "type":"object",
+                    "properties": {
+                      "matrix": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "exclude": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
                 }
               }
+            }
+          }
+        }
+      }
+    },
+    "if": {
+      "properties": {
+        "spack": {
+          "properties": {
+            "specs": {
+              "contains": {
+                "const": "$ROOT_SPEC"
+              }
+            }
+          }
+        }
+      }
+    },
+    "then": {
+      "properties": {
+        "spack": {
+          "properties": {
+            "definitions": {
+              "allOf": [
+                {
+                  "contains": {
+                    "type": "object",
+                    "required": ["ROOT_SPEC"]
+                  }
+                },
+                {
+                  "contains": {
+                    "type": "object",
+                    "required": ["ROOT_PACKAGE"]
+                  }
+                }
+              ]
             }
           }
         }
