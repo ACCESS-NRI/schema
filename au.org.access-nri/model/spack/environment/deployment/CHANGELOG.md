@@ -1,5 +1,12 @@
 # `spack.yaml` Schema Changelog
 
+## 1-0-4
+
+* Updated `spack.definitions` to require definitions for `ROOT_PACKAGE` and `ROOT_SPEC` iff `spack.specs` contains `"$ROOT_SPEC"`.
+* Updated `spack.specs` to allow `"$ROOT_SPEC"` in speclist.
+
+This has full interoperability with the earlier schema/data.
+
 ## 1-0-3
 
 * Updated `spack.specs` pattern to allow variants following the `@git.VERSION`. This has full interoperability with the earlier schema.
