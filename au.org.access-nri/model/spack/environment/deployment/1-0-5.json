@@ -50,7 +50,6 @@
             "type": "array",
             "default": [],
             "minItems": 1,
-            "maxItems": 1,
             "items": {
               "type": "string",
               "pattern": "^.+@git\\.[^ ]+.*$|\\$ROOT_SPEC"
