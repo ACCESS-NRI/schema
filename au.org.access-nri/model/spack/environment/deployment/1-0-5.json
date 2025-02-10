@@ -104,8 +104,10 @@
     "if": {
       "properties": {
         "spack": {
+          "type": "object",
           "properties": {
             "specs": {
+              "type": "array",
               "contains": {
                 "const": "$ROOT_SPEC"
               }
@@ -117,16 +119,19 @@
     "then": {
       "properties": {
         "spack": {
+          "type": "object",
           "properties": {
             "definitions": {
               "allOf": [
                 {
+                  "type": "array",
                   "contains": {
                     "type": "object",
                     "required": ["ROOT_SPEC"]
                   }
                 },
                 {
+                  "type": "array",
                   "contains": {
                     "type": "object",
                     "required": ["ROOT_PACKAGE"]
