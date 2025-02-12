@@ -1,5 +1,12 @@
 # `spack.yaml` Schema Changelog
 
+## 1-0-5
+
+* Updated `spack.specs` to allow > 1 specs allowed. The first spec is still used as a basis for deployment information.
+* Updated `spack.specs` pattern to allow `=VERSION` after `@git.REF`
+
+This has full interoperability with the earlier schema/data.
+
 ## 1-0-4
 
 * Updated `spack.definitions` to require definitions for `ROOT_PACKAGE` and `ROOT_SPEC` iff `spack.specs` contains `"$ROOT_SPEC"`.
