@@ -15,6 +15,30 @@
             "type": "object",
             "default": {},
             "additionalProperties": true,
+            "properties": {
+              "gcc-runtime": {
+                "type": "object",
+                "default": {},
+                "additionalProperties": true,
+                "properties": {
+                  "require": {
+                    "type": "array",
+                    "minItems": 1,
+                    "additionalItems": true,
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": "object"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
             "patternProperties": {
               "(?!^all$)(^\\w[\\w-]*)": {
                 "type": "object",
