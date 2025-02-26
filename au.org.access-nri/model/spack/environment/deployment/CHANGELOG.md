@@ -1,5 +1,17 @@
 # `spack.yaml` Schema Changelog
 
+## 1-0-6
+
+* Added special case for `spack.packages.gcc-runtime.require[0]` - it does not have to be a `@VERSION` as it dynamically creates it's version. That way, we can still put compiler constraints on the package without having to specify a version as the first element. For example:
+
+```yaml
+spack:
+  packages:
+    gcc-runtime:
+      requires:
+        - '%gcc@8.5.0'  # Note, not a '@VERSION'
+```
+
 ## 1-0-5
 
 * Updated `spack.specs` to allow > 1 specs allowed. The first spec is still used as a basis for deployment information.
