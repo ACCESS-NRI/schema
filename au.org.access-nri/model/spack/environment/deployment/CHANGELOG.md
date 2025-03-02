@@ -1,5 +1,11 @@
 # `spack.yaml` Schema Changelog
 
+## 1-0-7
+
+* Allow the use of `@latest` in `spack.specs[0]`. This is allowed for Prereleases, but not for Releases. This keeps continuity with local builds which can't use not-yet-existing `@git.TAG`s like Prerelease builds can.
+
+This has full interoperability with the earlier schema/data.
+
 ## 1-0-6
 
 * Added special case for `spack.packages.gcc-runtime.require[0]` - it does not have to be a `@VERSION` as it dynamically creates it's version. That way, we can still put compiler constraints on the package without having to specify a version as the first element. For example:
@@ -11,6 +17,8 @@ spack:
       requires:
         - '%gcc@8.5.0'  # Note, not a '@VERSION'
 ```
+
+This has full interoperability with the earlier schema/data.
 
 ## 1-0-5
 
