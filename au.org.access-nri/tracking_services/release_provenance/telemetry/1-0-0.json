@@ -1,0 +1,140 @@
+{
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/tracking_services/release_provenance/telemetry/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Telemetry data for release provenance",
+    "description": "Schema for JSON payload sent to tracking_services release_provenance database",
+    "type": "object",
+    "properties": {
+      "service": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "telemetry": {
+        "type": "object",
+        "properties": {
+          "model.name": {
+            "type": "string"
+          },
+          "model.deployment_repository_url": {
+            "type": "string"
+          },
+          "model.hive_docs_url": {
+            "type": "string"
+          },
+          "model_deployment.version": {
+            "type": "string"
+          },
+          "model_deployment.status": {
+            "type": "string"
+          },
+          "model_deployment.released_at": {
+            "type": "string"
+          },
+          "model_deployment.release_url": {
+            "type": "string"
+          },
+          "deployment_targets": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "deployment_target.name": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_version": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_git_hash": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_config_version": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_config_git_hash": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_packages_version": {
+                    "type": "string"
+                  },
+                  "deployment_target.spack_packages_git_hash": {
+                    "type": "string"
+                  },
+                  "deployment_target.module_load_location": {
+                    "type": "string"
+                  },
+                  "spack_model.name": {
+                    "type": "string"
+                  },
+                  "spack_model.spack_package_hash": {
+                    "type": "string"
+                  },
+                  "spack_model.module_use_command": {
+                    "type": "string"
+                  },
+                  "spack_model_components": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "spack_package_hash": {
+                            "type": "string"
+                          },
+                          "version": {
+                            "type": "string"
+                          },
+                          "install_location": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "spack_package_hash",
+                          "version",
+                          "install_location"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "deployment_target.name",
+                  "deployment_target.spack_version",
+                  "deployment_target.spack_git_hash",
+                  "deployment_target.spack_config_version",
+                  "deployment_target.spack_config_git_hash",
+                  "deployment_target.spack_packages_version",
+                  "deployment_target.spack_packages_git_hash",
+                  "deployment_target.module_load_location",
+                  "spack_model.name",
+                  "spack_model.spack_package_hash",
+                  "spack_model.module_use_command",
+                  "spack_model_components"
+                ]
+              }
+            ]
+          }
+        },
+        "required": [
+          "model.name",
+          "model.deployment_repository_url",
+          "model_deployment.version",
+          "model_deployment.status",
+          "model_deployment.released_at",
+          "model_deployment.release_url",
+          "deployment_targets"
+        ]
+      }
+    },
+    "required": [
+      "service",
+      "version",
+      "telemetry"
+    ]
+  }
