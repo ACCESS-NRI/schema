@@ -111,10 +111,10 @@
                   "deployment_target.spack_config_git_hash",
                   "deployment_target.spack_packages_version",
                   "deployment_target.spack_packages_git_hash",
-                  "deployment_target.module_load_location",
+                  "deployment_target.module_use_location",
                   "spack_model.name",
                   "spack_model.spack_package_hash",
-                  "spack_model.module_use_command",
+                  "spack_model.module_load_command",
                   "spack_model_components"
                 ]
               }
