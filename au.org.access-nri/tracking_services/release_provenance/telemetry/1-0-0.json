@@ -62,7 +62,7 @@
                   "deployment_target.spack_packages_git_hash": {
                     "type": "string"
                   },
-                  "deployment_target.module_use_location": {
+                  "deployment_target.module_load_location": {
                     "type": "string"
                   },
                   "spack_model.name": {
@@ -71,7 +71,7 @@
                   "spack_model.spack_package_hash": {
                     "type": "string"
                   },
-                  "spack_model.module_load_command": {
+                  "spack_model.module_use_command": {
                     "type": "string"
                   },
                   "spack_model_components": {
