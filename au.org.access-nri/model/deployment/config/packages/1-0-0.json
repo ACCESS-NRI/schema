@@ -1,0 +1,29 @@
+{
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/packages/1-0-0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Deployment Configuration for Packages",
+    "description": "Schema for specifying important packages used in the deployment of a model",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "URL to the schema definition"
+        },
+        "provenance": {
+            "type": "array",
+            "description": "List of packages recorded in the provenance tracking database, and injected as modules into the manifest",
+            "items": {
+                "type": "string"
+            }
+        },
+        "injection": {
+            "type": "array",
+            "description": "List of packages injected as modules into the manifest",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [ "$schema", "provenance", "injection" ],
+    "additionalProperties": false
+}
