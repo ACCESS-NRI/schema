@@ -7,7 +7,8 @@
     "properties": {
         "$schema": {
             "type": "string",
-            "description": "URL to the schema definition"
+            "description": "URL to the schema definition",
+            "const": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/deployment/config/packages/1-0-0.json"
         },
         "provenance": {
             "type": "array",
