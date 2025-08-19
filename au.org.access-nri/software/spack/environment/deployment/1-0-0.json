@@ -11,72 +11,12 @@
         "default": {},
         "additionalProperties": true,
         "properties": {
-          "packages": {
-            "type": "object",
-            "default": {},
-            "additionalProperties": true,
-            "properties": {
-              "gcc-runtime": {
-                "type": "object",
-                "default": {},
-                "additionalProperties": true,
-                "properties": {
-                  "require": {
-                    "type": "array",
-                    "minItems": 1,
-                    "additionalItems": true,
-                    "items": {
-                      "oneOf": [
-                        {
-                          "type": "object"
-                        },
-                        {
-                          "type": "string"
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            },
-            "patternProperties": {
-              "(?!^(all|gcc-runtime)$)(^\\w[\\w-]*)": {
-                "type": "object",
-                "default": {},
-                "additionalProperties": true,
-                "properties": {
-                  "require": {
-                    "type": "array",
-                    "minItems": 1,
-                    "additionalItems": true,
-                    "items": [
-                      {
-                        "type": "string",
-                        "pattern": "^@[A-Za-z0-9.\\-_=\/]+$"
-                      },
-                      {
-                        "oneOf": [
-                          {
-                            "type": "object"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              }
-            }
-          },
           "specs": {
             "type": "array",
             "default": [],
             "minItems": 1,
             "items": {
-              "type": "string",
-              "pattern": "^.+@git\\.[^= ]+.*$|\\$ROOT_SPEC|^.+@latest"
+              "type": "string"
             }
           },
           "definitions": {
