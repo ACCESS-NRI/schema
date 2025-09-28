@@ -59,7 +59,7 @@
       "patternProperties": {
         "^(?!default$)[a-zA-Z0-9._-]+$": { "$ref": "#/definitions/profile" }
       },
-      "required:": ["default"],
+      "required": ["default"],
       "additionalProperties": false
     }
   },
