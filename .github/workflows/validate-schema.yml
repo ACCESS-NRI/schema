@@ -28,8 +28,7 @@ jobs:
       with:
         matrix: true
         files: |
-          !tests/**
-          **.json
+          au.org.access-nri/**.json
 
   validate:
     name: Validate
