@@ -29,6 +29,7 @@ jobs:
         matrix: true
         files: |
           **.json
+          !tests/**
 
   validate:
     name: Validate
