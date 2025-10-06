@@ -28,8 +28,8 @@ jobs:
       with:
         matrix: true
         files: |
-          **.json
           !tests/**
+          **.json
 
   validate:
     name: Validate
