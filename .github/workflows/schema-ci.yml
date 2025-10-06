@@ -4,7 +4,7 @@ on: [pull_request, workflow_dispatch]
 
 env:
   SCHEMA_DIR: au.org.access-nri/model/output/file-metadata/2-0-0
-  TEST_DIR: au.org.access-nri/tests/2-0-0
+  TEST_DIR: tests/2-0-0
 
 jobs:
   schema-tests:
