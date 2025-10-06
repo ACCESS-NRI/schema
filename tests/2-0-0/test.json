@@ -1,5 +1,5 @@
 {
-    "target": "../../model/output/file-metadata/2-0-0/2-0-0.json",
+    "target": "../../au.org.access-nri/model/output/file-metadata/2-0-0/2-0-0.json",
     "tests": [
         {
             "description": "Full ESM1.6",
