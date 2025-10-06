@@ -1,6 +1,5 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/output/file-metadata/2-0-0/2-0-0.json",
   "title": "ACCESS ESM1.6 Model Output Data Specification",
   "description": "The metadata associated with a file containing or referencing climate model data",
   "type": "object",
