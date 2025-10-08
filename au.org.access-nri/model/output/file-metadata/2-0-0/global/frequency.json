@@ -10,7 +10,7 @@
       "pattern": "^fx$"
     },
     {
-      "pattern": "^\\d+min$"
+      "pattern": "^subhr$"
     },
     {
       "pattern": "^\\d+hr$"
