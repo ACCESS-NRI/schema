@@ -8,9 +8,9 @@
                 "global": {
                     "title": "this is a title",
                     "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",
-                    "run_id": "git hash?",
+                    "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
                     "creation_date": "2025-12-03T11:22:00Z",
-                    "realm": ["atmos"],
+                    "realm": "atmos",
                     "model": "ACCESS-ESM1.6",
                     "model_version": "2025.06.001",
                     "base_configuration": "release-preindustrial+concentrations-2.0",
