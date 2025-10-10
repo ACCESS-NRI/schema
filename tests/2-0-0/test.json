@@ -23,6 +23,21 @@
                     "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
                     "_IsNetcdf4": "yes",
                     "_Format": "netCDF-4"
+                },
+                "variables": {
+                    "tas": {
+                        "units": "K",
+                        "long_name": "Near-surface Air Temperature",
+                        "standard_name": "air_temperature",
+                        "cell_methods": "time: point (interval: 1H) time: mean (interval: 1M)",
+                        "_FillValue": -2147483647
+                    },
+                    "lat": {
+                        "_FillValue": 1.0e+20,
+                        "standard_name": "latitude",
+                        "units": "degrees_north",
+                        "long_name": "latitude"
+                    }
                 }
             }
         },

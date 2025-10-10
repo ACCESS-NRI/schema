@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable.json",
+  "title": "Output variable",
+  "description": "A coordinate or data output variable",
+  "type": "object",
+  "properties": {
+    "_FillValue": {
+      "title": "_FillValue",
+      "description": "Value assigned to portions of the variable fields that are \"missing\".",
+      "examples": [ -2147483647, -9999 ],
+      "type": "number"
+    },
+    "cell_methods": {
+      "title": "cell_methods",
+      "description": "A string comprising a list of space-separated pairs, \"name:method\", which indicate that for axis \"name\" the values representing the fields have been determined by \"method\".",
+      "examples": [
+        "time: point",
+        "time: mean (interval: 1 hour)",
+        "time: maximum (interval: 1D) time: mean (interval: 1M)"
+      ],
+      "type": "string"
+    },
+    "long_name": {
+      "title": "long_name",
+      "description": "A long descriptive name which may, for example, be used for labeling plots.",
+      "examples": [
+        "Near-Surface Air Temperature",
+        "latitude",
+        "Potential Evapotranspiration"
+      ],
+      "type": "string"
+    },
+    "standard_name": {
+      "title": "standard_name",
+      "description": "Where posisble use the CF standard_name of the variable, otherwise use a unique short phrase separated by underscores to describe the variable.",
+      "examples": [
+        "air_pressure_at_sea_level",
+        "latitude",
+        "water_potential_evaporation_flux"
+      ],
+      "type": "string"
+    },
+    "units": {
+      "title": "units",
+      "description": "The units of measurement for the variable",
+      "examples": [ "K", "m-2 s-1" ],
+      "type": "string"
+    }
+  }
+}

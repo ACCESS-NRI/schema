@@ -3,10 +3,18 @@
   "title": "ACCESS ESM1.6 Model Output Data Specification",
   "description": "The metadata associated with a file containing or referencing climate model data",
   "type": "object",
-  "required": [ "global" ],
+  "required": [ "global", "variables" ],
   "properties": {
     "global": {
       "$ref": "global.json"
+    },
+    "variables": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "$ref": "variable.json"
+        }
+      }
     }
   }
 }
