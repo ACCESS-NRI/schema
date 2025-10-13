@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable/long_name.json",
+  "description": "A long descriptive name which may, for example, be used for labeling plots.",
+  "examples": [
+    "Near-Surface Air Temperature",
+    "latitude",
+    "Potential Evapotranspiration"
+  ],
+  "type": "string"
+}
