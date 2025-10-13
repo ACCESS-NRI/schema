@@ -10,8 +10,10 @@
     "atmosChem",
     "land",
     "landIce",
+    "none",
     "ocean",
     "ocnBgchem",
-    "seaIce"
+    "seaIce",
+    "unknown"
   ]
 }

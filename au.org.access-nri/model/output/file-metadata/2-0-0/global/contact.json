@@ -3,6 +3,7 @@
   "$id": "global/contact.json",
   "title": "contact",
   "description": "Email address of the contact for the data",
+  "$comment": "Should email format here be inforced? Or free string?",
   "examples": [ "data.access.nri@anu.edu.au" ],
   "type": "string",
   "pattern": "\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\\b"

@@ -5,23 +5,24 @@
   "description": "File-level metadata for ACCESS ESM1.6 data",
   "type": "object",
   "required": [
-    "title",
-    "experiment_uuid",
-    "run_id",
-    "creation_date",
-    "realm",
-    "model",
-    "model_version",
+    "_Format",
+    "_IsNetcdf4",
     "base_configuration",
+    "contact",
+    "Conventions",
+    "creation_date",
+    "data_specification",
     "experiment_url",
+    "experiment_uuid",
     "frequency",
     "grid",
-    "Conventions",
     "licence",
-    "contact",
-    "data_specification",
-    "_IsNetcdf4",
-    "_Format"
+    "model_version",
+    "model",
+    "naming_authority",
+    "realm",
+    "run_id",
+    "title"
   ],
   "properties": {
     "title": {
@@ -52,7 +53,7 @@
       "$ref": "global/experiment_url.json"
     },
     "experiment_uuid": {
-      "$ref": "global/uuid.json"
+      "$ref": "global/experiment_uuid.json"
     },
     "frequency": {
       "$ref": "global/frequency.json"
@@ -68,6 +69,9 @@
     },
     "model_version": {
       "$ref": "global/model_version.json"
+    },
+    "naming_authority": {
+      "$ref": "global/naming_authority.json"
     },
     "realm": {
       "$ref": "global/realm.json"
