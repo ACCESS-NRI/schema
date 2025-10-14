@@ -4,6 +4,7 @@
   "title": "realm",
   "description": "Realm where the data variable is defined",
   "examples": [ "atmos", "landIce" ],
+  "type": "string",
   "enum": [
     "aerosol",
     "atmos",
@@ -15,6 +16,5 @@
     "ocnBgchem",
     "seaIce",
     "unknown"
-  ],
-  "type": "string"
+  ]
 }
