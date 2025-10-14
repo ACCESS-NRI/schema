@@ -15,5 +15,6 @@
     "ocnBgchem",
     "seaIce",
     "unknown"
-  ]
+  ],
+  "type": "string"
 }
