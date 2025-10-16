@@ -6,8 +6,6 @@
             "valid": true,
             "data": {
                 "global": {
-                    "_IsNetcdf4": "yes",
-                    "_Format": "netCDF-4",
                     "base_configuration": "release-preindustrial+concentrations-2.0",
                     "contact": "data.access.nri@anu.edu.au",
                     "Conventions": "CF-1.11",
