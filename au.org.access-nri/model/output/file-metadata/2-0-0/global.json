@@ -29,12 +29,6 @@
     "Conventions": {
       "$ref": "global/Conventions.json"
     },
-    "_Format": {
-      "$ref": "global/_Format.json"
-    },
-    "_IsNetcdf4": {
-      "$ref": "global/_IsNetcdf4.json"
-    },
     "base_configuration": {
       "$ref": "global/base_configuration.json"
     },
