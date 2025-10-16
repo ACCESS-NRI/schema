@@ -5,8 +5,6 @@
   "description": "File-level metadata for ACCESS ESM1.6 data",
   "type": "object",
   "required": [
-    "_Format",
-    "_IsNetcdf4",
     "base_configuration",
     "contact",
     "Conventions",
