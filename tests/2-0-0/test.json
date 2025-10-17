@@ -13,6 +13,7 @@
                     "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
                     "experiment_url": "x",
                     "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",
+                    "id": "F6B536FA-766D-4609-B767-754C9424440A",
                     "frequency": "1hr",
                     "grid": "grid goes here",
                     "licence": "CC-BY-4.0",
