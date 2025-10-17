@@ -9,7 +9,7 @@
                     "base_configuration": "release-preindustrial+concentrations-2.0",
                     "contact": "data.access.nri@anu.edu.au",
                     "Conventions": "CF-1.11",
-                    "creation_date": "2025-12-03T11:22:00Z",
+                    "date_created": "2025-12-03T11:22:00Z",
                     "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
                     "experiment_url": "x",
                     "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",

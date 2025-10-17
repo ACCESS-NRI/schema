@@ -8,7 +8,7 @@
     "base_configuration",
     "contact",
     "Conventions",
-    "creation_date",
+    "date_created",
     "data_specification",
     "experiment_url",
     "experiment_uuid",
@@ -35,11 +35,17 @@
     "contact": {
       "$ref": "global/contact.json"
     },
-    "creation_date": {
-      "$ref": "global/creation_date.json"
-    },
     "data_specification": {
       "$ref": "global/data_specification.json"
+    },
+    "date_created": {
+      "$ref": "global/date_created.json"
+    },
+    "date_metadata_modified": {
+      "$ref": "global/date_metadata_modified.json"
+    },
+    "date_modified": {
+      "$ref": "global/date_modified.json"
     },
     "experiment_url": {
       "$ref": "global/experiment_url.json"

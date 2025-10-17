@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "global/creation_date.json",
-  "title": "creation_date",
+  "$id": "global/date_created.json",
+  "title": "date_created",
   "description": "Date and time the file was created. Follow ISO 8601, i.e. 'YYYY-MM-DDTHH:MM:SSZ'",
   "$comment": "",
   "examples": [ "2025-10-07T11:10:00Z" ],
