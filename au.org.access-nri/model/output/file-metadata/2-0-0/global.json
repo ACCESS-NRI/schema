@@ -76,6 +76,9 @@
     },
     "run_id": {
       "$ref": "global/run_id.json"
+    },
+    "variable_id": {
+      "$ref": "global/variable_id.json"
     }
   }
 }

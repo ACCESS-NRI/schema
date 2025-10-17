@@ -21,7 +21,8 @@
                     "naming_authority": "au.org.access-nri",
                     "realm": "atmos",
                     "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
-                    "title": "this is a title"
+                    "title": "this is a title",
+                    "variable_id": "tas"
                 },
                 "variables": {
                     "tas": {
