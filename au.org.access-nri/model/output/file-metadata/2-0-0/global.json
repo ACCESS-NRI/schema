@@ -24,6 +24,9 @@
     "title"
   ],
   "properties": {
+    "id": {
+      "$ref": "global/id.json"
+    },
     "title": {
       "$ref": "global/title.json"
     },
@@ -59,9 +62,6 @@
     },
     "grid": {
       "$ref": "global/grid.json"
-    },
-    "id": {
-      "$ref": "global/id.json"
     },
     "licence": {
       "$ref": "global/licence.json"
