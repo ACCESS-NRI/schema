@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/tracking_services/release_provenance/telemetry/1-0-0.json",
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/tracking_services/release_provenance/telemetry/2-0-0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Telemetry data for release provenance",
     "description": "Schema for JSON payload sent to tracking_services release_provenance database",
@@ -9,7 +9,8 @@
         "type": "string"
       },
       "version": {
-        "type": "string"
+        "type": "string",
+        "const": "2-0-0"
       },
       "telemetry": {
         "type": "object",
@@ -56,10 +57,16 @@
                   "deployment_target.spack_config_git_hash": {
                     "type": "string"
                   },
-                  "deployment_target.spack_packages_version": {
+                  "deployment_target.builtin_spack_packages_version": {
                     "type": "string"
                   },
-                  "deployment_target.spack_packages_git_hash": {
+                  "deployment_target.builtin_spack_packages_git_hash": {
+                    "type": "string"
+                  },
+                  "deployment_target.access_spack_packages_version": {
+                    "type": "string"
+                  },
+                  "deployment_target.access_spack_packages_git_hash": {
                     "type": "string"
                   },
                   "deployment_target.module_use_location": {
@@ -113,8 +120,10 @@
                   "deployment_target.spack_git_hash",
                   "deployment_target.spack_config_version",
                   "deployment_target.spack_config_git_hash",
-                  "deployment_target.spack_packages_version",
-                  "deployment_target.spack_packages_git_hash",
+                  "deployment_target.builtin_spack_packages_version",
+                  "deployment_target.builtin_spack_packages_git_hash",
+                  "deployment_target.access_spack_packages_version",
+                  "deployment_target.access_spack_packages_git_hash",
                   "deployment_target.module_use_location",
                   "spack_model.name",
                   "spack_model.spack_package_hash",
