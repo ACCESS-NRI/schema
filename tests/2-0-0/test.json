@@ -1,0 +1,51 @@
+{
+    "target": "../../au.org.access-nri/model/output/file-metadata/2-0-0/2-0-0.json",
+    "tests": [
+        {
+            "description": "Full ESM1.6",
+            "valid": true,
+            "data": {
+                "global": {
+                    "base_configuration": "release-preindustrial+concentrations-2.0",
+                    "contact": "data.access.nri@anu.edu.au",
+                    "Conventions": "CF-1.11",
+                    "date_created": "2025-12-03T11:22:00Z",
+                    "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
+                    "experiment_url": "x",
+                    "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",
+                    "id": "F6B536FA-766D-4609-B767-754C9424440A",
+                    "frequency": "1hr",
+                    "grid": "grid goes here",
+                    "licence": "CC-BY-4.0",
+                    "model_version": "2025.06.001",
+                    "model": "ACCESS-ESM1.6",
+                    "naming_authority": "au.org.access-nri",
+                    "realm": "atmos",
+                    "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
+                    "title": "this is a title",
+                    "variable_id": "tas"
+                },
+                "variables": {
+                    "tas": {
+                        "units": "K",
+                        "long_name": "Near-surface Air Temperature",
+                        "standard_name": "air_temperature",
+                        "cell_methods": "time: point (interval: 1H) time: mean (interval: 1M)",
+                        "_FillValue": -2147483647
+                    },
+                    "lat": {
+                        "_FillValue": 1.0e+20,
+                        "standard_name": "latitude",
+                        "units": "degrees_north",
+                        "long_name": "latitude"
+                    }
+                }
+            }
+        },
+        {
+            "description": "Empty",
+            "valid": false,
+            "data": {}
+        }
+    ]
+}

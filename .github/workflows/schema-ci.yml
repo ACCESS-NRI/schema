@@ -1,0 +1,33 @@
+name: JSON Schema CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  SCHEMA_DIR: au.org.access-nri/model/output/file-metadata/2-0-0
+  TEST_DIR: tests/2-0-0
+
+jobs:
+  schema-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the Sourcemeta JSON Schema CLI
+        uses: sourcemeta/jsonschema@v11.8.3
+
+      - name: Check schemas against their metaschemas
+        run: jsonschema metaschema --verbose $SCHEMA_DIR
+
+      - name: Check schemas are formatted
+        run: jsonschema fmt --check --verbose $SCHEMA_DIR
+
+      - name: Lint schemas
+        run: jsonschema lint --verbose --exclude enum_with_type $SCHEMA_DIR
+
+      - name: Run test suite
+        run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIR
