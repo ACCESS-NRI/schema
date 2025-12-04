@@ -3,6 +3,6 @@
   "$id": "global/experiment_url.json",
   "title": "experiment_url",
   "description": "Git repository URL that describes the experiment",
-  "examples": [ "PUT EXAMPLE URL HERE" ],
+  "examples": [ "https://github.com/ACCESS-NRI/access-esm1.6-configs/tree/gen-cmip7-historical-5670ea96" ],
   "type": "string"
 }
