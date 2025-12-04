@@ -1,5 +1,10 @@
 # `spack.yaml` Schema Changelog
 
+## 2-0-0
+
+* Require reserved definitions for `spack.definitions[]._name` and `spack.definitions[]._version`
+* Relax requirements on `spack.specs` entirely
+
 ## 1-0-7
 
 * Allow the use of `@latest` in `spack.specs[0]`. This is allowed for Prereleases, but not for Releases. This keeps continuity with local builds which can't use not-yet-existing `@git.TAG`s like Prerelease builds can.
