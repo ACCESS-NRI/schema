@@ -75,18 +75,31 @@
             "default": [],
             "minItems": 1,
             "items": {
-              "type": "string",
-              "pattern": "^.+@git\\.[^= ]+.*$|\\$ROOT_SPEC|^.+@latest"
+              "type": "string"
             }
           },
           "definitions": {
             "type": "array",
             "default": [],
+            "required": ["_name", "_version"],
             "items": {
               "type": "object",
               "properties": {
-                "when": {
-                  "type": "string"
+                "_name": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "_version": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "ROOT_PACKAGE": {
                   "type": "array",
