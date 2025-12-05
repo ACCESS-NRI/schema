@@ -14,7 +14,7 @@
     "experiment_uuid",
     "frequency",
     "id",
-    "licence",
+    "license",
     "model_version",
     "model",
     "naming_authority",
@@ -62,8 +62,8 @@
     "grid": {
       "$ref": "global/grid.json"
     },
-    "licence": {
-      "$ref": "global/licence.json"
+    "license": {
+      "$ref": "global/license.json"
     },
     "model": {
       "$ref": "global/model.json"
