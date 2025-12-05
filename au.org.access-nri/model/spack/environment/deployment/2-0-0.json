@@ -81,9 +81,9 @@
           "definitions": {
             "type": "array",
             "default": [],
-            "required": ["_name", "_version"],
             "items": {
               "type": "object",
+              "required": ["_name", "_version"],
               "properties": {
                 "_name": {
                   "type": "array",
