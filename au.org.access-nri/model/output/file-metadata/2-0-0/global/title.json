@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "global/title.json",
   "title": "title",
-  "description": "Name of the dataset following the Payu standard of...",
-  "examples": [ "PUT EXAMPLE HERE" ],
+  "description": "Name of the dataset. Typically following the Payu naming scheme detailed here - https://payu.readthedocs.io/en/stable/usage.html#experiment-names",
+  "examples": [ "my_expt-perturb-416af8c6" ],
   "type": "string"
 }

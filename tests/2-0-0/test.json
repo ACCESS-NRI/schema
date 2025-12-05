@@ -16,7 +16,7 @@
                     "id": "F6B536FA-766D-4609-B767-754C9424440A",
                     "frequency": "1hr",
                     "grid": "grid goes here",
-                    "licence": "CC-BY-4.0",
+                    "license": "CC-BY-4.0",
                     "model_version": "2025.06.001",
                     "model": "ACCESS-ESM1.6",
                     "naming_authority": "au.org.access-nri",
