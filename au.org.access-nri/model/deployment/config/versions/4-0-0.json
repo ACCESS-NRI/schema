@@ -13,6 +13,12 @@
         },
         "access-spack-packages": {
             "type": "string"
+        },
+        "custom-scopes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     },
     "required": [ "$schema", "spack", "access-spack-packages" ],

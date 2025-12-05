@@ -15,3 +15,4 @@
 ## 4-0-0
 
 * Updated `spack-packages` to `access-spack-packages` to demarcate it from the new, required `builtin-spack-packages` in `build-cd`s `config/settings.json`. This means it's not interoperable with historical data.
+* Also added an optional `custom-scopes` array for modifying `spack install` scopes from `spack-config`s `custom/cd` directory.
