@@ -80,27 +80,46 @@
           },
           "definitions": {
             "type": "array",
-            "default": [],
+            "minItems": 2,
+            "allOf": [
+              {
+                "type": "array",
+                "contains": {
+                  "type": "object",
+                  "required": ["_name"],
+                  "properties": {
+                    "_name": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 1,
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "array",
+                "contains": {
+                  "type": "object",
+                  "required": ["_version"],
+                  "properties": {
+                    "_name": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 1,
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
             "items": {
               "type": "object",
-              "required": ["_name", "_version"],
               "properties": {
-                "_name": {
-                  "type": "array",
-                  "minItems": 1,
-                  "maxItems": 1,
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "_version": {
-                  "type": "array",
-                  "minItems": 1,
-                  "maxItems": 1,
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "ROOT_PACKAGE": {
                   "type": "array",
                   "minItems": 1,
