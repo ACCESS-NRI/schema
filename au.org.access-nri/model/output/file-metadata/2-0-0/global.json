@@ -10,7 +10,7 @@
     "Conventions",
     "date_created",
     "data_specification",
-    "experiment_url",
+    "experiment_repo",
     "experiment_uuid",
     "frequency",
     "id",
@@ -51,7 +51,7 @@
       "$ref": "global/date_modified.json"
     },
     "experiment_url": {
-      "$ref": "global/experiment_url.json"
+      "$ref": "global/experiment_repo.json"
     },
     "experiment_uuid": {
       "$ref": "global/experiment_uuid.json"
