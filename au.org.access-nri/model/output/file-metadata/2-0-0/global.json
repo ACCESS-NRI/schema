@@ -13,19 +13,14 @@
     "experiment_repo",
     "experiment_uuid",
     "frequency",
-    "id",
     "license",
     "model_version",
     "model",
-    "naming_authority",
     "realm",
     "run_id",
     "title"
   ],
   "properties": {
-    "id": {
-      "$ref": "global/id.json"
-    },
     "title": {
       "$ref": "global/title.json"
     },
@@ -70,9 +65,6 @@
     },
     "model_version": {
       "$ref": "global/model_version.json"
-    },
-    "naming_authority": {
-      "$ref": "global/naming_authority.json"
     },
     "realm": {
       "$ref": "global/realm.json"
