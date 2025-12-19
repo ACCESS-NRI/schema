@@ -17,7 +17,7 @@
           "type": "object",
           "description": "Configs within this profile keyed by config name.",
           "patternProperties": {
-            "^[a-zA-Z0-9._-]+$": {
+            "^[a-zA-Z0-9._+-]+$": {
               "type": "object",
               "properties": {
                 "checks": {
