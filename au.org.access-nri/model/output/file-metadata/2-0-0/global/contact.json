@@ -3,6 +3,6 @@
   "$id": "global/contact.json",
   "title": "contact",
   "description": "Email address or other contact details for who to contact regarding this data.",
-  "examples": [ "data.access.nri@anu.edu.au" ],
+  "examples": [ "access.nri@anu.edu.au", "John Smith (john.smith@email.com)" ],
   "type": "string"
 }

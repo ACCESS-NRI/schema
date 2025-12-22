@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "global/experiment_url.json",
-  "title": "experiment_url",
+  "$id": "global/experiment_repo.json",
+  "title": "experiment_repo",
   "description": "Git repository URL that describes the experiment",
-  "examples": [ "PUT EXAMPLE URL HERE" ],
+  "examples": [ "https://github.com/ACCESS-NRI/access-esm1.6-configs/" ],
   "type": "string"
 }
