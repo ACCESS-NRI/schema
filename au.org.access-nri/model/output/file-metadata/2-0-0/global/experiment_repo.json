@@ -3,6 +3,6 @@
   "$id": "global/experiment_repo.json",
   "title": "experiment_repo",
   "description": "Git repository URL that describes the experiment",
-  "examples": [ "https://github.com/ACCESS-NRI/access-esm1.6-configs/" ],
+  "examples": [ "https://github.com/ACCESS-Community-Hub/access-esm1.6-dev-experiments" ],
   "type": "string"
 }

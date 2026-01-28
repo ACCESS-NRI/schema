@@ -45,7 +45,7 @@
     "date_modified": {
       "$ref": "global/date_modified.json"
     },
-    "experiment_url": {
+    "experiment_repo": {
       "$ref": "global/experiment_repo.json"
     },
     "experiment_uuid": {
