@@ -83,35 +83,52 @@
                   },
                   "spack_model_components": {
                     "type": "array",
-                    "items": [
-                      {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "type": "string"
-                          },
-                          "spack_package_hash": {
-                            "type": "string"
-                          },
-                          "version": {
-                            "type": "string"
-                          },
-                          "install_location": {
-                            "type": "string"
-                          },
-                          "repository_url": {
-                            "type": "string"
-                          }
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
                         },
-                        "required": [
-                          "name",
-                          "spack_package_hash",
-                          "version",
-                          "install_location",
-                          "repository_url"
-                        ]
-                      }
-                    ]
+                        "spack_package_hash": {
+                          "type": "string"
+                        },
+                        "version": {
+                          "type": "string"
+                        },
+                        "install_location": {
+                          "type": "string"
+                        },
+                        "repository_url": {
+                          "type": "string"
+                        },
+                        "md5s": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "path": {
+                                "type": "string"
+                              },
+                              "md5": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "path",
+                              "md5"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "spack_package_hash",
+                        "version",
+                        "install_location",
+                        "repository_url",
+                        "md5s"
+                      ]
+                    }
                   }
                 },
                 "required": [
