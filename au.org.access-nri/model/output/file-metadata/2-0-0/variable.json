@@ -5,9 +5,6 @@
   "description": "A coordinate or data output variable",
   "type": "object",
   "properties": {
-    "_FillValue": {
-      "$ref": "variable/_FillValue.json"
-    },
     "cell_methods": {
       "$ref": "variable/cell_methods.json"
     },

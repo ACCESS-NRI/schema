@@ -10,23 +10,17 @@
     "Conventions",
     "date_created",
     "data_specification",
-    "experiment_url",
+    "experiment_repo",
     "experiment_uuid",
     "frequency",
-    "grid",
-    "id",
-    "licence",
+    "license",
     "model_version",
     "model",
-    "naming_authority",
     "realm",
     "run_id",
     "title"
   ],
   "properties": {
-    "id": {
-      "$ref": "global/id.json"
-    },
     "title": {
       "$ref": "global/title.json"
     },
@@ -51,8 +45,8 @@
     "date_modified": {
       "$ref": "global/date_modified.json"
     },
-    "experiment_url": {
-      "$ref": "global/experiment_url.json"
+    "experiment_repo": {
+      "$ref": "global/experiment_repo.json"
     },
     "experiment_uuid": {
       "$ref": "global/experiment_uuid.json"
@@ -63,17 +57,14 @@
     "grid": {
       "$ref": "global/grid.json"
     },
-    "licence": {
-      "$ref": "global/licence.json"
+    "license": {
+      "$ref": "global/license.json"
     },
     "model": {
       "$ref": "global/model.json"
     },
     "model_version": {
       "$ref": "global/model_version.json"
-    },
-    "naming_authority": {
-      "$ref": "global/naming_authority.json"
     },
     "realm": {
       "$ref": "global/realm.json"

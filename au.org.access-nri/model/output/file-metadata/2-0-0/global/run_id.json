@@ -3,6 +3,6 @@
   "$id": "global/run_id.json",
   "title": "run_id",
   "description": "Git hash for the commit associated with the experiment run",
-  "examples": [ "6a18f2514cf281bf9b47972e45a33743ec0e5962" ],
+  "examples": [ "3a38fe4", "3a38fe435e156700ab649c4921e99f7c68a168bc" ],
   "type": "string"
 }

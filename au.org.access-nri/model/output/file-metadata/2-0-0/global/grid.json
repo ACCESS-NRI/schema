@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "global/grid.json",
   "title": "grid",
-  "description": "Brief description of output grid characteristics",
+  "description": "Brief description of output grid characteristics or reference to grid specification. Should be included if the grid is not defined by the dimensions in the file.",
   "examples": [],
   "type": "string"
 }
