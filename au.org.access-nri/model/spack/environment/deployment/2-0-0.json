@@ -40,7 +40,7 @@
               }
             },
             "patternProperties": {
-              "(?!^(all|gcc-runtime)$)(^\\w[\\w-]*)": {
+              "(?!^(all|gcc-runtime|c|cxx|fortran)$)(^\\w[\\w-]*)": {
                 "type": "object",
                 "default": {},
                 "additionalProperties": true,
