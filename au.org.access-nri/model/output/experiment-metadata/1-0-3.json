@@ -111,7 +111,7 @@
                     "items": {"type": ["string", "null"]}
                 }
             ],
-            "description": "The nominal resolution(s) of model(s) used in the experiment (string or array of strings)"
+            "description": "The nominal resolution(s) of model(s) used in the experiment (string or array of strings), e.g. 10km"
         },
         "version": {
             "type": ["number", "string", "null"],
