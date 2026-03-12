@@ -46,5 +46,5 @@ jobs:
           for i in "${!TEST_DIRS[@]}"; do
             TEST_DIR=${TEST_DIRS[i]}
             SCHEMA_DIR=${SCHEMA_DIRS[i]}
-            jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIRS
+            jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIR
           done
