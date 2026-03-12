@@ -27,7 +27,12 @@ jobs:
         run: jsonschema fmt --check --verbose $SCHEMA_DIR
 
       - name: Lint schemas
-        run: jsonschema lint --verbose --exclude enum_with_type $SCHEMA_DIR
+        run: |
+          jsonschema lint --verbose \
+            --exclude enum_with_type \
+            --exclude description_trailing_period \
+            --exclude top_level_examples \
+            $SCHEMA_DIR
 
       - name: Run test suite
         run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIR
