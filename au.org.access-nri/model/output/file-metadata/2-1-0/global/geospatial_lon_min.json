@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/geospatial_lon_min.json",
+  "title": "geospatial_lon_min",
+  "description": "Specifies the westernmost latitude covered by the dataset. Units should be \"degrees East\" and values should be a number equal to or between -180 and 180. See also geospatial_lon_max.",
+  "examples": [ -180, 88.48 ],
+  "type": "number"
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/geospatial_lon_units.json",
+  "title": "geospatial_lon_units",
+  "description": "Units for the longitude axis described in \"geospatial_lon_min\" and \"geospatial_lon_max\" attributes. These should be \"degrees_east\".",
+  "examples": [ "degrees_east" ],
+  "type": "string"
+}
