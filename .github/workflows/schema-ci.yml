@@ -11,7 +11,10 @@ env:
   SCHEMA_DIRS: |
     au.org.access-nri/model/output/file-metadata/2-0-0
     au.org.access-nri/model/output/file-metadata/2-1-0
-  TEST_DIR: tests/2-0-0
+  # TEST_DIRS need to have matching SCHEMA_DIRS in the same order
+  TEST_DIRS: |
+    tests/2-0-0
+    tests/2-1-0
 
 jobs:
   schema-tests:
@@ -37,4 +40,11 @@ jobs:
             $SCHEMA_DIRS
 
       - name: Run test suite
-        run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIRS
+        run: |
+          # Need to iterate through each pair of DIRS since there will be name
+          # collisions with different versions of the same schema 
+          for i in "${!TEST_DIRS[@]}"; do
+            TEST_DIR=${TEST_DIRS[i]}
+            SCHEMA_DIR=${SCHEMA_DIRS[i]}
+            jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIRS
+          done
