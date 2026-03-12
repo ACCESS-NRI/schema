@@ -4,7 +4,7 @@
   "title": "geospatial_lat_max",
   "description": "Specifies the northernmost latitude covered by the dataset. Units should be \"degrees North\" and values should be a number equal to or between -90 and 90.",
   "examples": [ 90, 12.98 ],
-  "minimum": -90,
+  "type": "number",
   "maximum": 90,
-  "type": "number"
+  "minimum": -90
 }
