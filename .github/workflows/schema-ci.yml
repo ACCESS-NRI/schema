@@ -8,7 +8,9 @@ on:
   workflow_dispatch:
 
 env:
-  SCHEMA_DIR: au.org.access-nri/model/output/file-metadata/2-0-0
+  SCHEMA_DIRS: |
+    au.org.access-nri/model/output/file-metadata/2-0-0
+    au.org.access-nri/model/output/file-metadata/2-1-0
   TEST_DIR: tests/2-0-0
 
 jobs:
@@ -21,10 +23,10 @@ jobs:
         uses: sourcemeta/jsonschema@v14.14.2
 
       - name: Check schemas against their metaschemas
-        run: jsonschema metaschema --verbose $SCHEMA_DIR
+        run: jsonschema metaschema --verbose $SCHEMA_DIRS
 
       - name: Check schemas are formatted
-        run: jsonschema fmt --check --verbose $SCHEMA_DIR
+        run: jsonschema fmt --check --verbose $SCHEMA_DIRS
 
       - name: Lint schemas
         run: |
@@ -32,7 +34,7 @@ jobs:
             --exclude enum_with_type \
             --exclude description_trailing_period \
             --exclude top_level_examples \
-            $SCHEMA_DIR
+            $SCHEMA_DIRS
 
       - name: Run test suite
-        run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIR
+        run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIRS
