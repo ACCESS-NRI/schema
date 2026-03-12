@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global.json",
+  "title": "ACCESS Global Attributes",
+  "description": "File-level metadata for ACCESS ESM1.6 data",
+  "type": "object",
+  "required": [
+    "base_configuration",
+    "contact",
+    "Conventions",
+    "date_created",
+    "data_specification",
+    "experiment_repo",
+    "experiment_uuid",
+    "frequency",
+    "license",
+    "model_version",
+    "model",
+    "realm",
+    "run_id",
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "$ref": "global/title.json"
+    },
+    "Conventions": {
+      "$ref": "global/Conventions.json"
+    },
+    "base_configuration": {
+      "$ref": "global/base_configuration.json"
+    },
+    "contact": {
+      "$ref": "global/contact.json"
+    },
+    "data_specification": {
+      "$ref": "global/data_specification.json"
+    },
+    "date_created": {
+      "$ref": "global/date_created.json"
+    },
+    "date_metadata_modified": {
+      "$ref": "global/date_metadata_modified.json"
+    },
+    "date_modified": {
+      "$ref": "global/date_modified.json"
+    },
+    "experiment_repo": {
+      "$ref": "global/experiment_repo.json"
+    },
+    "experiment_uuid": {
+      "$ref": "global/experiment_uuid.json"
+    },
+    "frequency": {
+      "$ref": "global/frequency.json"
+    },
+    "grid": {
+      "$ref": "global/grid.json"
+    },
+    "license": {
+      "$ref": "global/license.json"
+    },
+    "model": {
+      "$ref": "global/model.json"
+    },
+    "model_version": {
+      "$ref": "global/model_version.json"
+    },
+    "realm": {
+      "$ref": "global/realm.json"
+    },
+    "run_id": {
+      "$ref": "global/run_id.json"
+    },
+    "variable_id": {
+      "$ref": "global/variable_id.json"
+    }
+  }
+}
