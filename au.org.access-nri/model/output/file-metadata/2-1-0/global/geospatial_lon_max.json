@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/geospatial_lon_max.json",
+  "title": "geospatial_lon_max",
+  "description": "Specifies the easternmost longitude covered by the dataset. Units should be \"degrees East\" and values should be a number equal to or between -180 and 180. Cases where geospatial_lon_min is greater than geospatial_lon_max indicate the bounding box extends from geospatial_lon_max, through the longitude range discontinuity meridian, the antimeridian for -180:180 values, to geospatial_lon_min; for example, geospatial_lon_min=170 and geospatial_lon_max=-175 incorporates 15 degrees of longitude (ranges 170 to 180 and -180 to -175).",
+  "examples": [ 180, -152.61 ],
+  "type": "number",
+  "maximum": 180,
+  "minimum": -180
+}
