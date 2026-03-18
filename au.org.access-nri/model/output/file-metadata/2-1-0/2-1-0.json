@@ -10,6 +10,14 @@
     },
     "variables": {
       "type": "object",
+      "properties": {
+        "time": {
+          "$ref": "variable/time.json"
+        },
+        "time_bnds": {
+          "$ref": "variable/time_bnds.json"
+        }
+      },
       "patternProperties": {
         "^.+$": {
           "$ref": "variable.json"
