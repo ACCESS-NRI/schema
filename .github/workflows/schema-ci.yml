@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install the Sourcemeta JSON Schema CLI
-        uses: sourcemeta/jsonschema@v14.14.2
+        uses: sourcemeta/jsonschema@f0b6672d82955e58a73efd320068284a4e7a4483 #v14.14.2
 
       - name: Check schemas against their metaschemas
         run: jsonschema metaschema --verbose $SCHEMA_DIRS
