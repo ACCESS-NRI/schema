@@ -1,0 +1,35 @@
+{
+    "target": "../../../au.org.access-nri/model/output/file-metadata/2-1-0/global/geospatial_lon_min.json",
+    "tests": [
+        {
+            "description": "Valid lon_min - -180",
+            "valid": true,
+            "data": -180
+        },
+        {
+            "description": "Valid lon_min - 180",
+            "valid": true,
+            "data": 180
+        },
+        {
+            "description": "Valid lon_min - explicit float",
+            "valid": true,
+            "data": 12.3456
+        },
+        {
+            "description": "Invalid lon_min - string",
+            "valid": false,
+            "data": "-90"
+        },
+        {
+            "description": "Invalid lon_min - less than minimum",
+            "valid": false,
+            "data": -181
+        },
+        {
+            "description": "Invalid lon_min - more than maximum",
+            "valid": false,
+            "data": 181
+        }
+    ]
+}
