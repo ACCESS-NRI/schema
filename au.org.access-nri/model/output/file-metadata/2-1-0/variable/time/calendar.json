@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable/time/calendar.json",
+  "title": "calendar",
+  "description": "Calendar defines the set of valid datetimes and their order. Follows the CF-Convention names using lower-case strings. It is recommended that \"proleptic_calendar\" is used.",
+  "type": "string",
+  "enum": [
+    "standard",
+    "julian",
+    "proleptic_gregorian",
+    "no_leap",
+    "365_day",
+    "all_leap",
+    "366_day",
+    "360_day",
+    "utc",
+    "tai"
+  ]
+}

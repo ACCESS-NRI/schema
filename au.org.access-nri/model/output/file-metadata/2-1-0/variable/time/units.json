@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable/time/units.json",
+  "title": "units",
+  "description": "Units for time should be given as \"days since X\" where X is a date (yyyy-mm-dd) or a datetime (yyyy-mm-dd HH:MM or yyyy-mm-dd HH:MM:SS)",
+  "examples": [
+    "days since 0001-01-01 00:00:00",
+    "days since 0001-01-01 00:00",
+    "days since 1970-01-01",
+    "days since -5000-12-25"
+  ],
+  "pattern": "^days since -?\\d{4}-(1[012]|0[1-9])-(3[01]|[12][0-9]|0[1-9])( ([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?)?$"
+}
