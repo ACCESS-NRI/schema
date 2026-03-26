@@ -3,6 +3,5 @@
   "$id": "global/geospatial_lat_units.json",
   "title": "geospatial_lat_units",
   "description": "Units for the latitude axis described in \"geospatial_lat_min\" and \"geospatial_lat_max\" attributes. These should be \"degrees_north\".",
-  "examples": [ "degrees_north" ],
   "const": "degrees_north"
 }
