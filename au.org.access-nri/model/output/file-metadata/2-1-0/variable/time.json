@@ -6,7 +6,6 @@
   "type": "object",
   "required": [
     "axis",
-    "bounds",
     "calendar",
     "long_name",
     "standard_name",
