@@ -14,6 +14,17 @@
             }
         },
         {
+            "description": "Full valid time variable without bounds",
+            "valid": true,
+            "data": {
+                "axis": "T",
+                "calendar": "proleptic_gregorian",
+                "long_name": "time",
+                "standard_name": "time",
+                "units": "days since 0000-01-01"
+            }
+        },
+        {
             "description": "Missing required (long_name)",
             "valid": false,
             "data": {
