@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "variable/time/calendar.json",
   "title": "calendar",
-  "description": "Calendar defines the set of valid datetimes and their order. Follows the CF-Convention names using lower-case strings. It is recommended that \"proleptic_calendar\" is used.",
+  "description": "Calendar defines the set of valid datetimes and their order. Follows the CF-Convention names using lower-case strings. It is recommended that \"proleptic_gregorian\" is used for data with leap days and \"no_leap\"/\"365_day\" for data without leap days.",
   "type": "string",
   "enum": [
     "standard",
