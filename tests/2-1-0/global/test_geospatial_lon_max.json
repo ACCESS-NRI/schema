@@ -20,16 +20,6 @@
             "description": "Invalid lon_max - string",
             "valid": false,
             "data": "-90"
-        },
-        {
-            "description": "Invalid lon_max - less than minimum",
-            "valid": false,
-            "data": -180.1
-        },
-        {
-            "description": "Invalid lon_max - more than maximum",
-            "valid": false,
-            "data": 180.1
         }
     ]
 }

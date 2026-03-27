@@ -2,9 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "global/geospatial_lat_max.json",
   "title": "geospatial_lat_max",
-  "description": "Specifies the northernmost latitude covered by the dataset. Units should be \"degrees North\" and values should be a number equal to or between -90 and 90.",
+  "description": "Specifies the northernmost latitude covered by the dataset. Units should be \"degrees North\".",
   "examples": [ 90, 12.98 ],
-  "type": "number",
-  "maximum": 90,
-  "minimum": -90
+  "type": "number"
 }

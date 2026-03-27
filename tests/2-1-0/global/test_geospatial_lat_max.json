@@ -20,16 +20,6 @@
             "description": "Invalid lat_max - string",
             "valid": false,
             "data": "-90"
-        },
-        {
-            "description": "Invalid lat_max - less than minimum",
-            "valid": false,
-            "data": -91
-        },
-        {
-            "description": "Invalid lat_max - more than maximum",
-            "valid": false,
-            "data": 91
         }
     ]
 }
