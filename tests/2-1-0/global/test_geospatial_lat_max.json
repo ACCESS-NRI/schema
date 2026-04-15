@@ -1,0 +1,25 @@
+{
+    "target": "../../../au.org.access-nri/model/output/file-metadata/2-1-0/global/geospatial_lat_max.json",
+    "tests": [
+        {
+            "description": "Valid lat_max - -90",
+            "valid": true,
+            "data": -90
+        },
+        {
+            "description": "Valid lat_max - 90",
+            "valid": true,
+            "data": 90
+        },
+        {
+            "description": "Valid lat_max - explicit float",
+            "valid": true,
+            "data": 12.3456
+        },
+        {
+            "description": "Invalid lat_max - string",
+            "valid": false,
+            "data": "-90"
+        }
+    ]
+}

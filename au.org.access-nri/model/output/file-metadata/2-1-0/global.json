@@ -13,6 +13,10 @@
     "experiment_repo",
     "experiment_uuid",
     "frequency",
+    "geospatial_lat_max",
+    "geospatial_lat_min",
+    "geospatial_lon_max",
+    "geospatial_lon_min",
     "license",
     "model_version",
     "model",
@@ -53,6 +57,24 @@
     },
     "frequency": {
       "$ref": "global/frequency.json"
+    },
+    "geospatial_lat_max": {
+      "$ref": "global/geospatial_lat_max.json"
+    },
+    "geospatial_lat_min": {
+      "$ref": "global/geospatial_lat_min.json"
+    },
+    "geospatial_lat_units": {
+      "$ref": "global/geospatial_lat_units.json"
+    },
+    "geospatial_lon_max": {
+      "$ref": "global/geospatial_lon_max.json"
+    },
+    "geospatial_lon_min": {
+      "$ref": "global/geospatial_lon_min.json"
+    },
+    "geospatial_lon_units": {
+      "$ref": "global/geospatial_lon_units.json"
     },
     "grid": {
       "$ref": "global/grid.json"
