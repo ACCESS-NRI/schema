@@ -1,0 +1,40 @@
+{
+    "target": "../../../../au.org.access-nri/model/output/file-metadata/2-1-0/variable/time/units.json",
+    "tests": [
+        {
+            "description": "Valid units for time",
+            "valid": true,
+            "data": "days since 0001-01-01 00:00:00"
+        },
+        {
+            "description": "Valid units for time - no seconds",
+            "valid": true,
+            "data": "days since 0001-01-01 00:00"
+        },
+        {
+            "description": "Valid units for time - no time",
+            "valid": true,
+            "data": "days since 0001-01-01"
+        },
+        {
+            "description": "Invalid units for time - not real time",
+            "valid": false,
+            "data": "days since 0001-01-01 00:00:61"
+        },
+        {
+            "description": "Invalid units for time - not days",
+            "valid": false,
+            "data": "seconds since 0001-01-01 00:00:00"
+        },
+        {
+            "description": "Invalid units for time",
+            "valid": false,
+            "data": "not even close to valid"
+        },
+        {
+            "description": "Invalid units for time - not a string",
+            "valid": false,
+            "data": 5
+        }
+    ]
+}

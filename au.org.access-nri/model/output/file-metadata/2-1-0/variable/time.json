@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable/time.json",
+  "title": "time",
+  "description": "The time variable for the dataset.",
+  "type": "object",
+  "required": [
+    "axis",
+    "calendar",
+    "long_name",
+    "standard_name",
+    "units"
+  ],
+  "properties": {
+    "axis": {
+      "const": "T"
+    },
+    "bounds": {
+      "const": "time_bnds"
+    },
+    "calendar": {
+      "$ref": "time/calendar.json"
+    },
+    "long_name": {
+      "const": "time"
+    },
+    "standard_name": {
+      "const": "time"
+    },
+    "units": {
+      "$ref": "time/units.json"
+    }
+  },
+  "additionalProperties": false
+}
