@@ -1,0 +1,51 @@
+{
+    "target": "../../../au.org.access-nri/model/output/file-metadata/2-1-0/variable/time.json",
+    "tests": [
+        {
+            "description": "Full valid time variable",
+            "valid": true,
+            "data": {
+                "axis": "T",
+                "bounds": "time_bnds",
+                "calendar": "proleptic_gregorian",
+                "long_name": "time",
+                "standard_name": "time",
+                "units": "days since 0000-01-01"
+            }
+        },
+        {
+            "description": "Full valid time variable without bounds",
+            "valid": true,
+            "data": {
+                "axis": "T",
+                "calendar": "proleptic_gregorian",
+                "long_name": "time",
+                "standard_name": "time",
+                "units": "days since 0000-01-01"
+            }
+        },
+        {
+            "description": "Missing required (long_name)",
+            "valid": false,
+            "data": {
+                "axis": "T",
+                "bounds": "time_bnds",
+                "calendar": "proleptic_gregorian",
+                "standard_name": "time",
+                "units": "days since 0000-01-01"
+            }
+        },
+        {
+            "description": "Const doesn't match",
+            "valid": false,
+            "data": {
+                "axis": "T",
+                "bounds": "time_bounds",
+                "calendar": "proleptic_gregorian",
+                "long_name": "time",
+                "standard_name": "time",
+                "units": "days since 0000-01-01"
+            }
+        }
+    ]
+}

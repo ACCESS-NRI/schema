@@ -1,0 +1,64 @@
+{
+    "target": "../../au.org.access-nri/model/output/file-metadata/2-1-0/global.json",
+    "tests": [
+        {
+            "description": "Valid global attrs",
+            "valid": true,
+            "data": {
+                "base_configuration": "release-preindustrial+concentrations-2.0",
+                "contact": "data.access.nri@anu.edu.au",
+                "Conventions": "CF-1.11",
+                "date_created": "2025-12-03T11:22:00Z",
+                "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
+                "experiment_repo": "x",
+                "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",
+                "id": "F6B536FA-766D-4609-B767-754C9424440A",
+                "frequency": "1hr",
+                "grid": "grid goes here",
+                "geospatial_lat_min": -90,
+                "geospatial_lat_max": 90,
+                "geospatial_lat_units": "degrees_north",
+                "geospatial_lon_min": -180,
+                "geospatial_lon_max": 180,
+                "geospatial_lon_units": "degrees_east",
+                "license": "CC-BY-4.0",
+                "model_version": "2025.06.001",
+                "model": "ACCESS-ESM1.6",
+                "naming_authority": "au.org.access-nri",
+                "realm": "atmos",
+                "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
+                "title": "this is a title",
+                "variable_id": "tas"
+            }
+        },
+        {
+            "description": "Invalid global - missing required 'frequency'",
+            "valid": false,
+            "data":  {
+                "base_configuration": "release-preindustrial+concentrations-2.0",
+                "contact": "data.access.nri@anu.edu.au",
+                "Conventions": "CF-1.11",
+                "date_created": "2025-12-03T11:22:00Z",
+                "data_specification": "ACCESS Output Data Specification v0.1 XX.XXXX/zenodo.XXXXX",
+                "experiment_repo": "x",
+                "experiment_uuid": "F6B536FA-766D-4609-B767-754C9424440A",
+                "id": "F6B536FA-766D-4609-B767-754C9424440A",
+                "grid": "grid goes here",
+                "geospatial_lat_min": -90,
+                "geospatial_lat_max": 90,
+                "geospatial_lat_units": "degrees_north",
+                "geospatial_lon_min": -180,
+                "geospatial_lon_max": 180,
+                "geospatial_lon_units": "degrees_east",
+                "license": "CC-BY-4.0",
+                "model_version": "2025.06.001",
+                "model": "ACCESS-ESM1.6",
+                "naming_authority": "au.org.access-nri",
+                "realm": "atmos",
+                "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
+                "title": "this is a title",
+                "variable_id": "tas"
+            }
+        }
+    ]
+}

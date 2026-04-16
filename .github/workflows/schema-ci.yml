@@ -8,8 +8,13 @@ on:
   workflow_dispatch:
 
 env:
-  SCHEMA_DIR: au.org.access-nri/model/output/file-metadata/2-0-0
-  TEST_DIR: tests/2-0-0
+  SCHEMA_DIRS: |
+    au.org.access-nri/model/output/file-metadata/2-0-0
+    au.org.access-nri/model/output/file-metadata/2-1-0
+  # TEST_DIRS need to have matching SCHEMA_DIRS in the same order
+  TEST_DIRS: |
+    tests/2-0-0
+    tests/2-1-0
 
 jobs:
   schema-tests:
@@ -18,16 +23,31 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install the Sourcemeta JSON Schema CLI
-        uses: sourcemeta/jsonschema@v11.8.3
+        uses: sourcemeta/jsonschema@f0b6672d82955e58a73efd320068284a4e7a4483 #v14.14.2
 
       - name: Check schemas against their metaschemas
-        run: jsonschema metaschema --verbose $SCHEMA_DIR
+        run: jsonschema metaschema --verbose $SCHEMA_DIRS
 
       - name: Check schemas are formatted
-        run: jsonschema fmt --check --verbose $SCHEMA_DIR
+        run: jsonschema fmt --check --verbose $SCHEMA_DIRS
 
       - name: Lint schemas
-        run: jsonschema lint --verbose --exclude enum_with_type $SCHEMA_DIR
+        run: |
+          jsonschema lint --verbose \
+            --exclude enum_with_type \
+            --exclude description_trailing_period \
+            --exclude top_level_examples \
+            $SCHEMA_DIRS
 
       - name: Run test suite
-        run: jsonschema test --verbose $TEST_DIR --resolve $SCHEMA_DIR
+        run: |
+          # Need to iterate through each pair of DIRS since there will be name
+          # collisions with different versions of the same schema 
+          # Turn the strings into arrays of strings first
+          test_arr=($TEST_DIRS)
+          schema_arr=($SCHEMA_DIRS)
+          for i in "${!test_arr[@]}"; do
+            test_dir=${test_arr[i]}
+            schema_dir=${schema_arr[i]}
+            jsonschema test --verbose $test_dir --resolve $schema_dir
+          done
