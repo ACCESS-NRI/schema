@@ -32,7 +32,7 @@ runs:
         fi
 
     # Checkout the `schema-repo`
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         repository: access-nri/schema
         path: schema
