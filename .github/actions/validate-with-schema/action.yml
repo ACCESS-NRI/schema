@@ -36,7 +36,7 @@ runs:
           ${{ inputs.schema-location }}/${{ inputs.schema-version }}.json
         sparse-checkout-cone-mode: false
 
-    - uses: GrantBirki/json-yaml-validate@d7814b94473939c1daaca2c96131b891d4703a3c # v5.0.0
+    - uses: GrantBirki/json-yaml-validate@3ff75979f3b21171f2e8a44705f0ff4bed30bbc0 # v5.0.0
       with:
         mode: fail
         files: |
