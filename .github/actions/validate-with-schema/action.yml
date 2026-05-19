@@ -2,19 +2,15 @@ name: Validate With Schema
 description: Action that validates json/yaml data against a given schema
 inputs:
   schema-version:
-    type: string
     required: true
     description: Version of the schema required, in SchemaVer
   schema-location:
-    type: string
     required: true
     description: Directory within access-nri/schema that contains the schema
   data-location:
-    type: string
     required: true
     description: Path(s) to the data file(s) in the callers repository
   meta-schema-version:
-    type: string
     required: false
     default: draft-07
     description: |
@@ -32,7 +28,7 @@ runs:
         fi
 
     # Checkout the `schema-repo`
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         repository: access-nri/schema
         path: schema
@@ -40,7 +36,7 @@ runs:
           ${{ inputs.schema-location }}/${{ inputs.schema-version }}.json
         sparse-checkout-cone-mode: false
 
-    - uses: GrantBirki/json-yaml-validate@d7814b94473939c1daaca2c96131b891d4703a3c # v2.7.1
+    - uses: GrantBirki/json-yaml-validate@3ff75979f3b21171f2e8a44705f0ff4bed30bbc0 # v5.0.0
       with:
         mode: fail
         files: |
