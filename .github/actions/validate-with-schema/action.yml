@@ -2,19 +2,15 @@ name: Validate With Schema
 description: Action that validates json/yaml data against a given schema
 inputs:
   schema-version:
-    type: string
     required: true
     description: Version of the schema required, in SchemaVer
   schema-location:
-    type: string
     required: true
     description: Directory within access-nri/schema that contains the schema
   data-location:
-    type: string
     required: true
     description: Path(s) to the data file(s) in the callers repository
   meta-schema-version:
-    type: string
     required: false
     default: draft-07
     description: |
