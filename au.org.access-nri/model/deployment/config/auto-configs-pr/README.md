@@ -2,7 +2,7 @@
 
 This schema is used to validate the `config/auto-configs-pr.json` file in an MDR.
 
-That file is used to configure the automatic opening of Model Configuration Repository Pull Requests via a `!configs` comment command in the MDR.
+That file is used to configure the automatic opening of Model Configuration Repository Pull Requests via a `!update-configs` comment command in the MDR.
 
 ## Extending the schema
 

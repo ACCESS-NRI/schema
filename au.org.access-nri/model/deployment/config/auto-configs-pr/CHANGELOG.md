@@ -1,5 +1,9 @@
 # MDR `config/auto-configs-pr.json` Schema Changelog
 
+## 1-0-1
+
+* Allows a profile to be associated with a particular workflow manager - currently only payu or rose-cylc.
+
 ## 1-0-0
 
 * Initial release

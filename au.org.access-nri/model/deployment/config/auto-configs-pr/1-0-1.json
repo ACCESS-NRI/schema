@@ -13,6 +13,12 @@
           "description": "OWNER/REPO-formatted repository where model configurations are stored.",
           "pattern": "^[^/]+/[^/]+$"
         },
+        "workflow_manager": {
+          "type": "string",
+          "default": "payu",
+          "description": "The workflow manager to use for this profile.",
+          "enum": ["payu", "rose-cylc"]
+        },
         "configs": {
           "type": "object",
           "description": "Configs within this profile keyed by config name.",
