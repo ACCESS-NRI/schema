@@ -2,7 +2,8 @@
 
 ## 1-0-1
 
-* Allows a profile to be associated with a particular workflow manager - currently only payu or rose-cylc.
+* Allows a profile to be associated with a particular workflow manager - currently only payu (default) or rose-cylc.
+* Allows a profile to be associated with a particular HPC target - currently only gadi (default).
 
 ## 1-0-0
 

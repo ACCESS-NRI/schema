@@ -19,6 +19,12 @@
           "description": "The workflow manager to use for this profile.",
           "enum": ["payu", "rose-cylc"]
         },
+        "target": {
+          "type": "string",
+          "default": "gadi",
+          "description": "The target HPC system for this profile.",
+          "enum": ["gadi"]
+        },
         "configs": {
           "type": "object",
           "description": "Configs within this profile keyed by config name.",
