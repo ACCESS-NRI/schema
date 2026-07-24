@@ -162,6 +162,10 @@
                 "type": ["string", "null"]
             },
             "description": "Keyword(s) associated with experiment (array of strings)"
+        },
+        "parent_branch_off_time": {
+            "type": ["string", "null"],
+            "description": "Model time in the parent experiment from which this experiment was branched (string)"
         }
     },
     "required": [
