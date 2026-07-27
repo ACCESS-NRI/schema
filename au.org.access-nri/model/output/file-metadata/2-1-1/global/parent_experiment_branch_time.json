@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/parent_experiment_branch_time.json",
+  "title": "parent_experiment_branch_time",
+  "description": "The time this experiment branched from the parent given as a number using the parent experiment's units and calendar.",
+  "examples": [ 1234.5 ],
+  "type": "number"
+}

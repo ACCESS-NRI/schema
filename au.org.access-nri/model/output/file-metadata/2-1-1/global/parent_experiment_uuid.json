@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/parent_experiment_uuid.json",
+  "title": "parent_experiment_uuid",
+  "description": "The UUID of the parent experiment.",
+  "examples": [ "698E600B-BECF-4CBA-994F-A663A22FCDDF" ],
+  "type": "string"
+}

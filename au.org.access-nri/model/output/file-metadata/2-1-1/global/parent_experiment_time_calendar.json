@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/parent_experiment_time_calendar.json",
+  "title": "parent_experiment_time_calendar",
+  "description": "The calendar used by the parent experiment for the time deimension. Please use CF calendar names.",
+  "examples": [ "standard", "proleptic_gregorian", "360_day" ],
+  "type": "string"
+}
