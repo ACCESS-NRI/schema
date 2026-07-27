@@ -1,5 +1,8 @@
 # Deployment Packages Location Schema
 
+> [!IMPORTANT]
+> This schema is deprecated for MDR/SDRs using `build-cd@v9` or later, as that information is now in the `spack.yaml`. This config information is now in the [MDR `spack.yaml` schema](./../../../spack/environment/deployment/) from `3-0-0` onwards, or the [SDR `spack.yaml` schema](./../../../../tools/spack/environment/deployment/) from `2-0-0` onwards.
+
 This schema is used to specify versions of various repositories that are needed in the deployment of a specific model using `spack`.
 
 It is used in specific model repositories `config` directories, such as [ACCESS-NRI/ACCESS-OM2](https://github.com/ACCESS-NRI/ACCESS-OM2/tree/main/config).

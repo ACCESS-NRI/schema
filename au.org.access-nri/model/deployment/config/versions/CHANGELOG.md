@@ -16,3 +16,7 @@
 
 * Updated `spack-packages` to `access-spack-packages` to demarcate it from the new, required `builtin-spack-packages` in `build-cd`s `config/settings.json`. This means it's not interoperable with historical data.
 * Also added an optional `custom-scopes` array for modifying `spack install` scopes from `spack-config`s `custom/cd` directory.
+
+## Deprecation
+
+This schema was deprecated for `build-cd@v9` and later, see the README.
