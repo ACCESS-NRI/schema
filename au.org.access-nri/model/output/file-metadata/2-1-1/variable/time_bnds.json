@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "variable/time_bnds.json",
+  "title": "time_bnds",
+  "description": "The time_bnds variable for the dataset. Note this variable has no attributes.",
+  "const": {}
+}
