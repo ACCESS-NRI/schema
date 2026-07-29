@@ -1,5 +1,11 @@
 # `spack.yaml` Schema Changelog
 
+## 3-0-0
+
+* Require reserved definitions for `_spack-version`, `_provenance`, `_injection`
+* Require `spack.repos.access_spack_packages` section, with a constant `spack.repos.access_spack_packages.destination`
+* Optional reserved definition for `_custom-scopes`
+
 ## 2-0-0
 
 * Require reserved definitions for `spack.definitions[]._name` and `spack.definitions[]._version`

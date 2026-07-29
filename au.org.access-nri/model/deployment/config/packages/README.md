@@ -1,5 +1,8 @@
 # Deployment Special Packages Schema
 
+> [!IMPORTANT]
+> This schema is deprecated for MDR/SDRs using `build-cd@v9` or later, as that information is now in the `spack.yaml`. This config information is now in the [MDR `spack.yaml` schema](./../../../spack/environment/deployment/) from `3-0-0` onwards, or the [SDR `spack.yaml` schema](./../../../../tools/spack/environment/deployment/) from `2-0-0` onwards.
+
 This schema is used to mark certain packages as special in a model deployment repository.
 
 Currently we have to special marks:
