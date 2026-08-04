@@ -28,7 +28,9 @@
                 "realm": "atmos",
                 "run_id": "00b0e8d102733a0e36093a96b273ed2853ac2006",
                 "title": "this is a title",
-                "variable_id": "tas"
+                "variable_id": "tas",
+                "parent_experiment_uuid": "B6438F94-7EB0-4C77-87A3-1040634232DC",
+                "parent_experiment_branch_time": "2026-08-04T13:54:00Z"
             }
         },
         {

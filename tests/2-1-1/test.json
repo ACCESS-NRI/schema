@@ -31,9 +31,7 @@
                     "title": "this is a title",
                     "variable_id": "tas",
                     "parent_experiment_uuid": "B6438F94-7EB0-4C77-87A3-1040634232DC",
-                    "parent_experiment_time_calendar": "proleptic_gregorian",
-                    "parent_experiment_branch_time_units": "days since 0001-01-01 00:00",
-                    "parent_experiment_branch_time": 0
+                    "parent_experiment_branch_time": "2026-08-04T13:54:00Z"
                 },
                 "variables": {
                     "tas": {

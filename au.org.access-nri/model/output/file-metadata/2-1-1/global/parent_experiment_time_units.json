@@ -1,8 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "global/parent_experiment_time_units.json",
-  "title": "parent_experiment_time_units",
-  "description": "The units used by the parent experiment for the time dimension.",
-  "examples": [ "days since 1900-01-01 00:00:00" ],
-  "type": "string"
-}

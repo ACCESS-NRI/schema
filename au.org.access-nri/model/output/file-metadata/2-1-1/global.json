@@ -91,12 +91,6 @@
     "parent_experiment_branch_time": {
       "$ref": "global/parent_experiment_branch_time.json"
     },
-    "parent_experiment_time_units": {
-      "$ref": "global/parent_experiment_time_units.json"
-    },
-    "parent_experiment_time_calendar": {
-      "$ref": "global/parent_experiment_time_calendar.json"
-    },
     "parent_experiment_uuid": {
       "$ref": "global/parent_experiment_uuid.json"
     },
