@@ -1,0 +1,35 @@
+{
+    "target": "../../../au.org.access-nri/model/output/file-metadata/2-1-1/global/experiment_uuid.json",
+    "tests": [
+        {
+            "description": "Valid uuid",
+            "valid": true,
+            "data": "B5C4F741-3FA9-44FA-AB9C-6573317D004D"
+        },
+        {
+            "description": "Valid uuid - zeroes",
+            "valid": true,
+            "data": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+            "description": "Valid uuid with extra characters after",
+            "valid": false,
+            "data": "B5C4F741-3FA9-44FA-AB9C-6573317D004Dishouldntbehere"
+        },
+        {
+            "description": "Valid uuid with extra characters before",
+            "valid": false,
+            "data": "ishouldntbehereB5C4F741-3FA9-44FA-AB9C-6573317D004D"
+        },
+        {
+            "description": "Invalid uuid",
+            "valid": false,
+            "data": "this is not a uuid"
+        },
+        {
+            "description": "A number",
+            "valid": false,
+            "data": 5
+        }
+    ]
+}
