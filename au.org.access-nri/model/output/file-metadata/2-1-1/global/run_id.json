@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/run_id.json",
+  "title": "run_id",
+  "description": "Git hash for the commit associated with the experiment run",
+  "examples": [ "3a38fe4", "3a38fe435e156700ab649c4921e99f7c68a168bc" ],
+  "type": "string"
+}

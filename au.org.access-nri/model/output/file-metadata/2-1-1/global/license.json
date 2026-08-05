@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "global/license.json",
+  "title": "license",
+  "description": "Information on the license for the data to ensure all users have access to the terms of use. Use SPDX license identifiers where possible. The default license for ACCESS-NRI is CC-BY-4.0, users should change as needed.",
+  "examples": [ "CC-BY-4.0" ],
+  "type": "string"
+}

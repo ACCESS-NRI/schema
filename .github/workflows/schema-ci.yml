@@ -11,10 +11,12 @@ env:
   SCHEMA_DIRS: |
     au.org.access-nri/model/output/file-metadata/2-0-0
     au.org.access-nri/model/output/file-metadata/2-1-0
+    au.org.access-nri/model/output/file-metadata/2-1-1
   # TEST_DIRS need to have matching SCHEMA_DIRS in the same order
   TEST_DIRS: |
     tests/2-0-0
     tests/2-1-0
+    tests/2-1-1
 
 jobs:
   schema-tests:
