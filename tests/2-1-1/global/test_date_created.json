@@ -1,0 +1,81 @@
+{
+    "_comment": "These tests should cover all uses of the datetime regex - date_created, date_metadata_modified, date_modified, parent_experiment_branch_time",
+    "target": "../../../au.org.access-nri/model/output/file-metadata/2-1-1/global/date_created.json",
+    "tests": [
+        {
+            "description": "Valid time",
+            "valid": true,
+            "data": "2026-08-07T10:34:00Z"
+        },
+        {
+            "description": "Valid time - before year 1000",
+            "valid": true,
+            "data": "0123-01-01T12:34:56Z"
+        },
+        {
+            "description": "Valid time - year zero",
+            "valid": true,
+            "data": "0000-01-01T00:00:00Z"
+        },
+        {
+            "description": "Invalid time - characters after string",
+            "valid": false,
+            "data": "0000-01-01T00:00:00Zishouldntbehere"
+        },
+        {
+            "description": "Invalid time - characters before string",
+            "valid": false,
+            "data": "ishouldntbehere0000-01-01T00:00:00Z"
+        },
+        {
+            "description": "Invalid time - missing T",
+            "valid": false,
+            "data": "0000-01-01 00:00:00Z"
+        },
+        {
+            "description": "Invalid time - missing hyphens",
+            "valid": false,
+            "data": "00000101T00:00:00Z"
+        },
+        {
+            "description": "Invalid time - missing colons",
+            "valid": false,
+            "data": "0000-01-01T000000Z"
+        },
+        {
+            "description": "Invalid time - missing Z",
+            "valid": false,
+            "data": "0000-01-01T00:00:00"
+        },
+        {
+            "description": "Invalid time - missing seconds",
+            "valid": false,
+            "data": "0000-01-01T00:00Z"
+        },
+        {
+            "description": "Invalid time - month greater than 12",
+            "valid": false,
+            "data": "0000-13-01T00:00:00Z"
+        },
+        {
+            "description": "Invalid time - day greater than 31",
+            "valid": false,
+            "data": "0000-01-32T00:00:00Z"
+        },
+        {
+            "description": "Invalid time - hour greater than 23",
+            "valid": false,
+            "data": "0000-01-01T24:00:00Z"
+        },
+        {
+            "description": "Invalid time - minute greater than 59",
+            "valid": false,
+            "data": "0000-01-01T00:60:00Z"
+        },
+        {
+            "description": "Invalid time - second greater than 59",
+            "valid": false,
+            "data": "0000-01-01T00:00:60Z"
+        }
+    ]
+}
