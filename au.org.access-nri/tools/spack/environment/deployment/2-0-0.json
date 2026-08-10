@@ -34,7 +34,7 @@
                     "type": "string"
                   },
                   "destination": {
-                    "const": "$env/.package_repos/access-spack-packages"
+                    "const": "$env/package-repos/access-spack-packages"
                   }
                 },
                 "required": [
