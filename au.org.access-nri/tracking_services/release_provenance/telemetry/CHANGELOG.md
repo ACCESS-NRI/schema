@@ -12,6 +12,6 @@ We need to keep track of both `ACCESS-NRI/access-spack-packages` and `spack/spac
 * Add `deployment-target.builtin_spack_packages_[version|git_hash]`
 * Remove `deployment-target.spack_packages_[version|git_hash]`
 
-## 3-0-0
+## 2-1-0
 
-* We also need to keep track of components git hashes, so we have immutable provenance of model components - for example, tags can be moved.
+* We also need to keep track of components git hashes, so we have immutable provenance of model components - for example, tags can be moved. This is now required, but the lack of `additionalProperties: false` means some old data would have been interoperable with this change.
