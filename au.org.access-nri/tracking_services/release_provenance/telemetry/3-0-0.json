@@ -95,6 +95,10 @@
                         "version": {
                           "type": "string"
                         },
+                        "commit_hash": {
+                          "type": "string",
+                          "minLength": 40
+                        },
                         "install_location": {
                           "type": "string"
                         },
@@ -124,6 +128,7 @@
                         "name",
                         "spack_package_hash",
                         "version",
+                        "commit_hash",
                         "install_location",
                         "repository_url",
                         "md5s"
