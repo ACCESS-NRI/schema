@@ -1,12 +1,12 @@
 {
-    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/output/experiment-metadata/1-0-3.json",
+    "$id": "https://raw.githubusercontent.com/ACCESS-NRI/schema/main/au.org.access-nri/model/output/experiment-metadata/1-0-4.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Experiment metadata",
     "description": "The metadata associated with a model experiment",
     "type": "object",
     "properties": {
         "schema_version": {
-            "const": "1-0-3",
+            "const": "1-0-4",
             "description": "The version of the schema (string)"
         },
         "name": {
@@ -162,6 +162,16 @@
                 "type": ["string", "null"]
             },
             "description": "Keyword(s) associated with experiment (array of strings)"
+        },
+        "parent_experiment_branch_time": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "The model time corresponding to the restart path used to create this branch, e.g., 1951-02-01T00:00:00 (string)"
+        },
+        "parent_experiment_branch_commit": {
+            "type": ["string", "null"],
+            "minLength": 40,
+            "description": "Git commit hash of the source branch when this new branch was created (string)"
         }
     },
     "required": [
