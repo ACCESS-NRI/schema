@@ -135,7 +135,7 @@
           },
           "definitions": {
             "type": "array",
-            "minItems": 5,
+            "minItems": 4,
             "allOf": [
               {
                 "type": "array",
@@ -207,7 +207,6 @@
                 "type": "array",
                 "contains": {
                   "type": "object",
-                  "required": ["_injection"],
                   "properties": {
                     "_injection": {
                       "type": "array",
