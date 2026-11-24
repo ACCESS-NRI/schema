@@ -1,4 +1,4 @@
-# ACCESS-OM2 Checksums
+# `spack.yaml` Schema Changelog
 
 This schema is used to validate ACCESS-NRI's variation on the `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly.
 
