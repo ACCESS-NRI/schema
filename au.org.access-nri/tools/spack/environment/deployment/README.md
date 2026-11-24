@@ -1,5 +1,8 @@
 # General Software Spack Manifest Schema
 
+> [!IMPORTANT]
+> This namespace for the schema is retired and will be deleted once all SDRs move to the `.../(pre)release` subdirectory.
+
 This schema is used to validate ACCESS-NRI's variation on the `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly, in the case of general software deployment rather than models.
 
 This schema is less restrictive than the Model-specific counterpart in `au.org.access-nri/model/spack/environment/deployment`.

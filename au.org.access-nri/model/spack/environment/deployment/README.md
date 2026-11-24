@@ -1,5 +1,8 @@
 # `spack.yaml` Schema Changelog
 
+> [!IMPORTANT]
+> This namespace for the schema is retired and will be deleted once all MDRs move to the `.../(pre)release` subdirectory.
+
 This schema is used to validate ACCESS-NRI's variation on the `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly.
 
 ## Extending the schema
