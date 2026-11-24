@@ -1,5 +1,9 @@
 # General Software `spack.yaml` Schema Changelog
 
+## 2-0-1
+
+* Remove optional `_custom-scopes` reserved definition, being replaced by spacks own `spack.include` mechanism
+
 ## 2-0-0
 
 * Require reserved definitions for `_spack-version`, `_provenance`, `_injection`
