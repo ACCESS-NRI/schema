@@ -1,4 +1,4 @@
-# General Software `spack.yaml` Schema Changelog
+# Release General Software `spack.yaml` Schema Changelog
 
 ## 2-0-2
 

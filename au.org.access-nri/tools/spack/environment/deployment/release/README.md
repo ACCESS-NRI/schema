@@ -1,6 +1,6 @@
-# General Software Spack Manifest Schema
+# Release General Software Spack Manifest Schema
 
-This schema is used to validate ACCESS-NRI's variation on the `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly, in the case of general software deployment rather than models.
+This schema is used to validate ACCESS-NRI's variation on Release `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly, in the case of general software deployment rather than models.
 
 This schema is less restrictive than the Model-specific counterpart in `au.org.access-nri/model/spack/environment/deployment`.
 
