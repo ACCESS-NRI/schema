@@ -1,5 +1,9 @@
 # `spack.yaml` Schema Changelog
 
+## 3-0-2
+
+* Make reserved definition `_injection` optional
+
 ## 3-0-1
 
 * Remove optional `_custom-scopes` reserved definition, being replaced by spacks own `spack.include` mechanism
