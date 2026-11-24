@@ -156,20 +156,6 @@
                     }
                   }
                 }
-              },
-              {
-                "type": "array",
-                "contains": {
-                  "type": "object",
-                  "properties": {
-                    "_custom-scopes": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    }
-                  }
-                }
               }
             ],
             "items": {
