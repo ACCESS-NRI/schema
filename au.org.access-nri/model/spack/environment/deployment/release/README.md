@@ -1,6 +1,6 @@
-# `spack.yaml` Schema Changelog
+# Release `spack.yaml` Schema Changelog
 
-This schema is used to validate ACCESS-NRI's variation on the `spack.yaml` so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly.
+This schema is used to validate ACCESS-NRI's variation on Release `spack.yaml`s so the CI/CD infrastructure can deploy and interrogate aspects of the environment seamlessly.
 
 ## Extending the schema
 

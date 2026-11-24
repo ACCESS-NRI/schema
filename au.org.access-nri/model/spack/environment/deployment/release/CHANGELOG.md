@@ -1,4 +1,8 @@
-# `spack.yaml` Schema Changelog
+# Release `spack.yaml` Schema Changelog
+
+## 3-1-0
+
+* Change `spack.packages.*.require[]` to only accept non-`@git.` versions for release
 
 ## 3-0-2
 
